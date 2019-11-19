@@ -1,13 +1,66 @@
 {
   "defaultAccounts": [
-    { "email": "admin@foo.com", "password": "changeme", "role": "admin" },
-    { "email": "john@foo.com", "password": "changeme" }
+    {
+      "email": "admin@foo.com",
+      "password": "changeme",
+      "role": "admin",
+      "firstName": "admin",
+      "lastName": "foo"
+    },
+    {
+      "email": "john@foo.com",
+      "password": "changeme",
+      "firstName": "john",
+      "lastName": "foo"
+    }
   ],
-
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "name": "Basket",
+      "quantity": 3,
+      "owner": "john@foo.com",
+      "condition": "excellent"
+    },
+    {
+      "name": "Bicycle",
+      "quantity": 2,
+      "owner": "john@foo.com",
+      "condition": "poor"
+    },
+    {
+      "name": "Banana",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "good"
+    },
+    {
+      "name": "Boogie Board",
+      "quantity": 2,
+      "owner": "admin@foo.com",
+      "condition": "excellent"
+    }
+  ],
+  "defaultClubs": [
+    {
+      "clubName": "Academy for Creative Media Student Association",
+      "interests": "Academic,Professional",
+      "contact": "Emma Daily",
+      "website": "",
+      "email": "edaily@hawaii.edu"
+    },
+    {
+      "clubName": "Accounting Club at UH Manoa",
+      "interests": "Academic, Professional",
+      "contact": "Chelsi Morishige",
+      "website": "acuhmanoa.com",
+      "email": "chelsicm@hawaii.edu"
+    },
+    {
+      "clubName": "Adventist Christian Fellowship",
+      "interests": "Religious, Spiritual",
+      "contact": "Victor Kolonzo",
+      "website": "",
+      "email": "vkilonzo@hawaii.edu"
+    }
   ]
 }
