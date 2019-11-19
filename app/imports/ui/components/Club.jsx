@@ -6,17 +6,13 @@ import PropTypes from 'prop-types';
 class Club extends React.Component {
   render() {
     let clubInterests = this.props.club.interests;
+
     clubInterests = clubInterests.sort();
     return (
         <Card centered>
           <Card.Content>
             <Card.Header textAlign="center">{this.props.club.clubName}</Card.Header>
-            <Card.Description>
-              <b>Interests: </b>
-            </Card.Description>
-            <Card.Description>
-              {clubInterests.map((obj, index) => <Label key={index} size='small' content={obj} />)}
-            </Card.Description>
+            <hr/>
             <Card.Description>
               <b>Contact: </b>
               {this.props.club.contact}
@@ -25,8 +21,16 @@ class Club extends React.Component {
               <b>Website: </b>
               <a href="this.props.club.website">{this.props.club.website}</a>
             </Card.Description>
-            <Card.Description><b>Email: </b>
+            <Card.Description>
+              <b>Email: </b>
               {this.props.club.email}
+            </Card.Description>
+            <Card.Description>
+              <b>Interests: </b>
+              {clubInterests.map((obj, index) => <Label key={index} size='small' content={obj} />)}
+            </Card.Description>
+            <Card.Description textAlign="center">
+              <a href="">View Profile</a>
             </Card.Description>
           </Card.Content>
         </Card>

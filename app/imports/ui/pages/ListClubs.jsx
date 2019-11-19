@@ -4,7 +4,7 @@ import { Container, Card, Header, Loader } from 'semantic-ui-react';
 import Club from '/imports/ui/components/Club';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
-import { Clubs } from '../../api/clubs/Clubs';
+import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListClubs extends React.Component {
@@ -21,8 +21,8 @@ class ListClubs extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">Club Listings</Header>
-          <hr/>
-          <Card.Group centered itemsPerRow={6}>
+        <hr/>
+          <Card.Group centered itemsPerRow={4}>
             {ClubList.map((club, index) => <Club key={index} club={club}/>)}
           </Card.Group>
         </Container>
