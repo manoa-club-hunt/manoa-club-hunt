@@ -1,0 +1,13 @@
+.manoa-landing-background {
+  background: url(https://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/Manoa_Stream_Clean_up_2018.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+
+.footer-background {
+  background-color: white;
+  height: 200px;
+  padding-top: 20px;
+  padding-bot: 20px;
+}

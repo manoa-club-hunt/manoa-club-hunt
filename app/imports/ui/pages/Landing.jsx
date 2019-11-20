@@ -1,22 +1,28 @@
 import React from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import { Grid, Image, Header } from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
   render() {
+    const gridStyle = { height: '500px' };
     return (
-        <Grid verticalAlign='middle' textAlign='center' container>
-
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/meteor-logo.png"/>
-          </Grid.Column>
-
-          <Grid.Column width={8}>
-            <h1>Welcome to this template</h1>
-            <p>Now get to work and modify this app!</p>
-          </Grid.Column>
-
-        </Grid>
+        <div className="manoa-landing-background">
+          <Grid container verticalAlign="middle" style={gridStyle}>
+            <Grid.Row columns="two">
+              <Grid.Column>
+                <Image src="https://www.logolynx.com/images/logolynx/81/819f03ed059e267365b9b32c4a0ca3e7.png"/>
+              </Grid.Column>
+              <Grid.Column>
+                <Header as="h3" inverted>
+                  Looking for a club? Ready to find the one for you? Like E-Harmony, we find the perfect match for you.
+                  With the Manoa Club Hunt, we use a scientific algorithm to find people who are looking for people like
+                  you. Get started today by registering for a free user profile on Manoa Club Hunt. So what are you
+                  waiting for? Use Manoa Club Hunt today.
+                </Header>
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+        </div>
     );
   }
 }
