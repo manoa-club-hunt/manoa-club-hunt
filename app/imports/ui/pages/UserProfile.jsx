@@ -50,7 +50,7 @@ class UserProfile extends React.Component {
   renderPage() {
     const email = Meteor.user().username;
     const allInterests = _.pluck(Interests.find().fetch(), 'name');
-    const allProjects = _.pluck(Clubs.find().fetch(), 'name');
+    const allClubs = _.pluck(Clubs.find().fetch(), 'name');
     const formSchema = makeSchema(allInterests, allClubs);
     const clubs = _.pluck(UserProfilesClubs.find({ profile: email }).fetch(), 'club');
     const interests = _.pluck(UserProfilesInterests.find({ profile: email }).fetch(), 'interest');
@@ -97,4 +97,3 @@ export default withTracker(() => {
     ready: sub1.ready() && sub2.ready() && sub3.ready() && sub4.ready() && sub5.ready(),
   };
 })(UserProfile);
-
