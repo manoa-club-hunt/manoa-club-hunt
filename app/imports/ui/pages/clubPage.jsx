@@ -21,9 +21,9 @@ class ClubPage extends React.Component {
           <Header as="h3" textAlign="left">{this.props.clubs.interests}</Header>
           <div className="ui bulleted list">
             <div className="item">Club Info
-              <div className="item">{this.props.clubs.website}</div>
-              <div className="item">{this.props.clubs.contact}</div>
-              <div className="item">{this.props.clubs.email}</div>
+              <div className="item">Website: {this.props.clubs.website}</div>
+              <div className="item">Contact: {this.props.clubs.contact}</div>
+              <div className="item">Email: {this.props.clubs.email}</div>
             </div>
           </div>
           <hr/>
