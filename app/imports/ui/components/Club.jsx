@@ -32,7 +32,7 @@ class Club extends React.Component {
             </Card.Description>
             <Card.Description textAlign="center">
               <em>
-                <Link to={`/clubpage/${this.props.club._id}`}>View Profile</Link>
+                <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
               </em>
             </Card.Description>
           </Card.Content>
