@@ -18,6 +18,13 @@ class ClubPage extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">{this.props.clubs.clubName}</Header>
+          {this.props.clubs.website}
+          <br />
+          {this.props.clubs.email}
+          <br />
+          {this.props.clubs.interests}
+          <br />
+          {this.props.clubs.contact}
         <hr/>
         </Container>
     );
