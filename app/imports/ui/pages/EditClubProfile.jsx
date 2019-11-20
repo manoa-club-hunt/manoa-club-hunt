@@ -21,7 +21,7 @@ const formSchema = new SimpleSchema({
   email: { type: String, defaultValue: '' },
 });
 
-/** Renders the Page for adding a document. */
+/** Renders the Page for editing a document. */
 class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
