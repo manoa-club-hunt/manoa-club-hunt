@@ -1043,6 +1043,622 @@
       "contact": "Aime Le",
       "website": "mortarboardmanoa.weebly.com",
       "email": "ale77@hawaii.edu"
+    },
+    {
+      "clubName": "Nā Hawai'i 'Imi Loa Hui Haumāna",
+      "interests": "Service",
+      "contact": "Sharnelle Renti Cruz",
+      "website": "http://nhilhh.weebly.com",
+      "email": "sprc@hawaii.edu"
+    },
+    {
+      "clubName": "Na Koa",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Jace Nakama",
+      "website": "oahuchurch.org",
+      "email": "jacect@hawaii.edu"
+    },
+    {
+      "clubName": "Na Koa Lani Booster Club",
+      "interests": ["Academic", "Professional"],
+      "contact": "Brock Barr",
+      "website": "",
+      "email": "barrb@hawaii.edu"
+    },
+    {
+      "clubName": "Narrative Medicine Interest Group",
+      "interests": ["Academic", "Professional"],
+      "contact": "Kyung Moo Kim",
+      "website": "",
+      "email": "kkim29@hawaii.edu"
+    },
+    {
+      "clubName": "National Panhellenic Conferene",
+      "interests": ["Fraternity", "Sorority"],
+      "contact": "Avery Nueva",
+      "website": "uhmpanhel.com",
+      "email": "averymn@hawaii.edu"
+    },
+    {
+      "clubName": "Natural Sciences Student Ambassadors",
+      "interests": ["Academic", "Professional"],
+      "contact": "Taha Elwir",
+      "website": "",
+      "email": "elwira@hawaii.edu"
+    },
+    {
+      "clubName": "OB,GYN Interest Group",
+      "interests": ["Academic", "Professional"],
+      "contact": "Clare-Marie Anderson",
+      "website": "",
+      "email": "cmanders@hawaii.edu"
+    },
+    {
+      "clubName": "Oncology Interest Group at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Nicholas Fancher",
+      "website": "",
+      "email": "nfancher@hawaii.edu"
+    },
+    {
+      "clubName": "Opthalmology Interest Group",
+      "interests": ["Academic", "Professional"],
+      "contact": "Kevin Card",
+      "website": "",
+      "email": "cardk@hawaii.edu"
+    },
+    {
+      "clubName": "Pacific Asia Travel Association",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jay-O Alforque",
+      "website": "patahawaii.com",
+      "email": "alforque@hawaii.edu"
+    },
+    {
+      "clubName": "Pacific Asian Legal Student Organization",
+      "interests": ["Academic", "Professional"],
+      "contact": "Richard Crum",
+      "website": "https://www.law.hawaii.edu/student-organization",
+      "email": "crumr@hawaii.edu"
+    },
+    {
+      "clubName": "Partners in Health Engage UH Manoa Chapter",
+      "interests": ["Academic", "Professional"],
+      "contact": "Akane Dunn",
+      "website": "https://www.pih.org/engage",
+      "email": "akane2@hawaii.edu"
+    },
+    {
+      "clubName": "Partnership for Social Justice at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Amandalin Rock",
+      "website": "",
+      "email": "rocka@hawaii.edu"
+    },
+    {
+      "clubName": "Patient Safety and Quality Improvement  Interest Group",
+      "interests": ["Academic", "Professional"],
+      "contact": "Kristine Vo",
+      "website": "",
+      "email": "kbvo@hawaii.edu"
+    },
+    {
+      "clubName": "Pediatric Interest Group at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Kevin Pham",
+      "website": "",
+      "email": "kevinph@hawaii.edu"
+    },
+    {
+      "clubName": "Peer Mentor Ohana",
+      "interests": ["Academic", "Professional"],
+      "contact": "Rosemarie Woodruff",
+      "website": "",
+      "email": ""
+    },
+    {
+      "clubName": "Peer Mentoring Program at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Amandalin Rock",
+      "website": "",
+      "email": "rocka@hawaii.edu"
+    },
+    {
+      "clubName": "Phi Alpha Nu Sigma Honor Society",
+      "interests": ["Academic", "Professional"],
+      "contact": "Julie Anne Bacaro",
+      "website": "",
+      "email": "jafb@hawaii.edu"
+    },
+    {
+      "clubName": "Phi Alpha Theta (Alpha Beta Epsilon)",
+      "interests": ["Academic", "Professional"],
+      "contact": "Emily Holmberg",
+      "website": "phialphatheta.org",
+      "email": "emilyhol@hawaii.edu"
+    },
+    {
+      "clubName": "Phi Mu",
+      "interests": ["Fraternity", "Sorority"],
+      "contact": "Sarai Vargas",
+      "website": "hawaii.phimu.org",
+      "email": "svargas9@hawaii.edu"
+    },
+    {
+      "clubName": "Philippine Medical Student Association of Hawaii",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Arlene Kiyohara",
+      "website": "",
+      "email": "arlenecp@hawaii.edu"
+    },
+    {
+      "clubName": "Pi Gamma Mu",
+      "interests": "Honorary Society",
+      "contact": "Vendela Lindahl",
+      "website": "",
+      "email": "vendelal@hawaii.edu"
+    },
+    {
+      "clubName": "Pi Sigma Alpha- Tau Pi Chapter",
+      "interests": ["Academic", "Professional"],
+      "contact": "Justin Menina",
+      "website": "",
+      "email": "jmenina@hawaii.edu"
+    },
+    {
+      "clubName": "Pi Tau Sigma",
+      "interests": ["Academic", "Professional"],
+      "contact": "Michael Dang",
+      "website": "uhmsigmapi.wixsite.com",
+      "email": "mkdang@hawaii.edu"
+    },
+    {
+      "clubName": "Planners of Hawaii",
+      "interests": ["Academic", "Professional"],
+      "contact": "Nanea Lo",
+      "website": "plannersofhawaii.weebly.com",
+      "email": "plannersofhawaii@gmail.com"
+    },
+    {
+      "clubName": "Political Science Club at UH",
+      "interests": ["Academic", "Professional"],
+      "contact": "Justin Menina",
+      "website": "",
+      "email": "jmenina@hawaii.edu"
+    },
+    {
+      "clubName": "Powerlifting Club at the University of Hawaii at Manoa",
+      "interests": ["Sports", "Leisure"],
+      "contact": "Jaron Yamane",
+      "website": "",
+      "email": "jarony@hawaii.edu"
+    },
+    {
+      "clubName": "Pre-Medical Association",
+      "interests": ["Academic", "Professional"],
+      "contact": "Taylor Pu'uohau",
+      "website": "http://premed-at-uhm.uhm.squarespace.com",
+      "email": "tpuuohau@hawaii.edu"
+    },
+    {
+      "clubName": "Pre-Phamarcy Association at UH Manoa",
+      "interests": ["Academic", "Professional"],
+      "contact": "Tran Trinh",
+      "website": "uhmprepharmacyassociation.wordpress.com",
+      "email": "trant2@hawaii.edu"
+    },
+    {
+      "clubName": "Primary Care Progress at University of Hawaii",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jester Galiza",
+      "website": "",
+      "email": "jpgaliza@hawaii.edu"
+    },
+    {
+      "clubName": "Protection of Ocean and Nature Organization",
+      "interests": "Service",
+      "contact": "Maiko Ikeda",
+      "website": "ponohawaii.org",
+      "email": "maikoi@hawaii.edu"
+    },
+    {
+      "clubName": "Psi SIgma: The Psychology Connection",
+      "interests": ["Academic", "Professional"],
+      "contact": "BrandonBanuelos",
+      "website": "thepsychologyconnection.blogspot.com",
+      "email": "bbanuelo@hawaii.ed"
+    },
+    {
+      "clubName": "Public Administration Student Organization",
+      "interests": ["Academic", "Professional"],
+      "contact": "Lydia Chung",
+      "website": "",
+      "email": "lydiajc@hawaii.edu"
+    },
+    {
+      "clubName": "Public Relations Student Society of America",
+      "interests": ["Academic", "Professional"],
+      "contact": "Mei Jie Wu",
+      "website": "",
+      "email": "meijiew@hawaii.edu"
+    },
+    {
+      "clubName": "Rainbow Jugglers Juggling Club",
+      "interests": ["Sports", "Leisure"],
+      "contact": "Stephen Case",
+      "website": "www.rainbowjugglers.org",
+      "email": "stevec@hawaii.edu"
+    },
+    {
+      "clubName": "Regent and Presidential Scholars Club",
+      "interests": ["Academic", "Professional"],
+      "contact": "Noah Rodrigues",
+      "website": "",
+      "email": "noahrodr@hawaii.edu"
+    },
+    {
+      "clubName": "Reformed University Fellowship",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Joshua Hu",
+      "website": "rvfhawaii.org",
+      "email": "joshuahu@hawaii.edu"
+    },
+    {
+      "clubName": "Rural Health Interest Group at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Amandalin Rock",
+      "website": "",
+      "email": "rocka@hawaii.edu"
+    },
+    {
+      "clubName": "S-cubed",
+      "interests": ["Academic", "Professional"],
+      "contact": "Barbara Watanabe",
+      "website": "manoa.hawaii.edu/undergrad/sss",
+      "email": "blwatana@hawaii.edu"
+    },
+    {
+      "clubName": "Salsa Dancing @ UHM",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Gordon Walker",
+      "website": "",
+      "email": "gwalker@hawaii.edu"
+    },
+    {
+      "clubName": "Science Communicators Ohana",
+      "interests": ["Academic", "Professional"],
+      "contact": "Sarah Tucker",
+      "website": "",
+      "email": "tucker4@hawaii.edu"
+    },
+    {
+      "clubName": "Second Language Studies Student Association",
+      "interests": ["Academic", "Professional"],
+      "contact": "Leeseul Park",
+      "website": "http://blog.hawaii.edu/slssa/",
+      "email": "leeseul@hawaii.edu"
+    },
+    {
+      "clubName": "Shooting Stars",
+      "interests": ["Academic", "Professional"],
+      "contact": "Michael Liu",
+      "website": "",
+      "email": "liumicha@hawaii.edu"
+    },
+    {
+      "clubName": "Silver Wings",
+      "interests": ["Academic", "Professional"],
+      "contact": "Anthony Lee",
+      "website": "",
+      "email": "awl@hawaii.edu"
+    },
+    {
+      "clubName": "Smash Bros. Club at The University of Hawaii at Manoa",
+      "interests": ["Leisure", "Recreational"],
+      "contact": "Isaiah Sheppard-Nelson",
+      "website": "",
+      "email": "isaiahsn@hawaii.edu"
+    },
+    {
+      "clubName": "Society of American Archivists University of Hawai'i Student Chapter",
+      "interests": ["Academic", "Professional"],
+      "contact": "Marleah Renti Cruz",
+      "website": "http://hisaasc.weebly.com",
+      "email": "marleah@hawaii.edu"
+    },
+    {
+      "clubName": "Society of Automotive Engineers at UH Manoa",
+      "interests": ["Academic", "Professional"],
+      "contact": "Michael Dang",
+      "website": "",
+      "email": "mkdang@hawaii.edu"
+    },
+    {
+      "clubName": "Society for Human Resource Management, Aloha Chapter",
+      "interests": ["Academic", "Professional"],
+      "contact": "Josiah J. Villar",
+      "website": "shrmuhm.com",
+      "email": "josiahlj@hawaii.edu"
+    },
+    {
+      "clubName": "Society of Nepalese in Hawaii",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Man Dhoj Rai",
+      "website": "www.esneha.org",
+      "email": "mandhoj@hawaii.edu"
+    },
+    {
+      "clubName": "Society of Physics Students at the University of Hawaii at Manoa",
+      "interests": ["Academic", "Professional"],
+      "contact": "Zachary Martin",
+      "website": "",
+      "email": "zmart@hawaii.edu"
+    },
+    {
+      "clubName": "Society of Women Engineers",
+      "interests": ["Academic", "Professional"],
+      "contact": "Candice Sarangay",
+      "website": "uhm.swe.org",
+      "email": "sarangay@hawaii.edu"
+    },
+    {
+      "clubName": "Spanish and Portugese Club",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Megan Fereira",
+      "website": "",
+      "email": "fereira@hawaii.edu"
+    },
+    {
+      "clubName": "Speech Communication Society",
+      "interests": ["Academic", "Professional"],
+      "contact": "Kittra Evenson",
+      "website": "",
+      "email": "evenson8@hawaii.edu"
+    },
+    {
+      "clubName": "STAR Club",
+      "interests": ["Academic", "Professional"],
+      "contact": "Sharon Widup",
+      "website": "https://www.star.hawaii.edu",
+      "email": "swidup@hawaii.edu"
+    },
+    {
+      "clubName": "Stole Society",
+      "interests": "Student Affairs",
+      "contact": "Mark Oandasan",
+      "website": "",
+      "email": "markco@hawaii.edu"
+    },
+    {
+      "clubName": "Students for a National Health Program at University of Hawaii",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jester Galiza",
+      "website": "",
+      "email": "jpgaliza@hawaii.edu"
+    },
+    {
+      "clubName": "Student Immunization Initiative",
+      "interests": ["Academic", "Professional"],
+      "contact": "Albert To",
+      "website": "https://www.sihawaii.org",
+      "email": "albertto@hawaii.edu"
+    },
+    {
+      "clubName": "Student Interest Group for Neurology and Psychiatry",
+      "interests": ["Academic", "Professional"],
+      "contact": "Christina Tse",
+      "website": "",
+      "email": "tsec@hawaii.edu"
+    },
+    {
+      "clubName": "Students Interested in Pathology",
+      "interests": ["Academic", "Professional"],
+      "contact": "Chad Russell",
+      "website": "",
+      "email": "chadruss@hawaii.edu"
+    },
+    {
+      "clubName": "Students with Keiki @ the University of Hawaii- Manoa",
+      "interests": "Student Affairs",
+      "contact": "Angelique K. Solomon",
+      "website": "uhmstudentswkeiki.wixsite.com/website",
+      "email": "gotkids@hawaii.edu"
+    },
+    {
+      "clubName": "Student Nurses' Association",
+      "interests": ["Academic", "Professional"],
+      "contact": "Miki Matsuoka",
+      "website": "",
+      "email": "snamanoa@hawaii.edu"
+    },
+    {
+      "clubName": "Student Veteran Organization",
+      "interests": ["Academic", "Professional"],
+      "contact": "Andrew Lanza",
+      "website": "",
+      "email": "ajlanza@hawaii.edu"
+    },
+    {
+      "clubName": "Supporting Women in Information, Technology and Computing in Hawaii at the University of Hawaii at Manoa",
+      "interests": ["Academic", "Professional"],
+      "contact": "Quinne Uchida",
+      "website": "swith-uhm.github.io",
+      "email": "qauchida@hawaii.edu"
+    },
+    {
+      "clubName": "Surfrider Foundation UH Manoa Club",
+      "interests": ["Sports", "Leisure"],
+      "contact": "Laurel Perun",
+      "website": "uhmanoasurfrider.wordpress.com",
+      "email": "lperun@hawaii.edu"
+    },
+    {
+      "clubName": "Thai Studies Club",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Anongard Nusartlert",
+      "website": "thaistudieshawaii.wordpress.com",
+      "email": "an2009@hawaii.edu"
+    },
+    {
+      "clubName": "The Anime Manga Society of Hawaii at UH Manoa",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Barryn Chun",
+      "website": "www.amsmanoa.org",
+      "email": "chun808@hawaii.edu"
+    },
+    {
+      "clubName": "The Elohist Club at UH",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Christopher Blake",
+      "website": "elohist.club",
+      "email": "cjblake@hawaii.edu"
+    },
+    {
+      "clubName": "The Engineers' Council at the University of Hawaii",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jianna Leonora Orias",
+      "website": "http://www.ecuh.org",
+      "email": "jlorias@hawaii.edu"
+    },
+    {
+      "clubName": "The Ethnomusicology Association",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Travis Shaver",
+      "website": "https://www.emauhm.org/",
+      "email": "tshaver@hawaii.edu"
+    },
+    {
+      "clubName": "The Healing Earth Initiative",
+      "interests": "Service",
+      "contact": "Ashley Ostendorf",
+      "website": "",
+      "email": "ashleyno@hawaii.edu"
+    },
+    {
+      "clubName": "The iMua Learned Society at the Univeristy of Hawaii (iMua Living Labs)",
+      "interests": ["Academic", "Professional"],
+      "contact": "Justin Menina",
+      "website": "manoa.cc",
+      "email": "jmenina@hawaii.edu"
+    },
+    {
+      "clubName": "The Language Documentation Training Center",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jessica Charest",
+      "website": "ldtc.org",
+      "email": "jcharest@hawaii.edu"
+    },
+    {
+      "clubName": "The National Society of Collegiate Scholars, University of Hawai'i at Manoa Chapter",
+      "interests": ["Academic", "Professional"],
+      "contact": "Alyssa Hironaka",
+      "website": "nscs.org",
+      "email": "alyssahi@hawaii.edu"
+    },
+    {
+      "clubName": "The Navigators",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Lauren Block",
+      "website": "",
+      "email": "blockln7@hawaii.edu"
+    },
+    {
+      "clubName": "The Pre-Dental Association at the University of Hawaii at Manoa",
+      "interests": ["Academic", "Professional"],
+      "contact": "Paolo Atienza",
+      "website": "",
+      "email": "patienza@hawaii.edu"
+    },
+    {
+      "clubName": "The Students for Success Club",
+      "interests": ["Academic", "Professional"],
+      "contact": "Nicole Panos",
+      "website": "",
+      "email": "npanos@hawaii.edu"
+    },
+    {
+      "clubName": "Timpuyog Organization",
+      "interests": ["Ethnic", "Cultural"],
+      "contact": "Jane Nicole Teneza",
+      "website": "manoa.hawaii.edu/ilokano/timpuyog.html",
+      "email": "teneza20@hawaii.edu"
+    },
+    {
+      "clubName": "Transcendental Meditation Club",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Taryn Bond",
+      "website": "",
+      "email": "BondTL@hawaii.edu"
+    },
+    {
+      "clubName": "Travel Industry Management Student Association",
+      "interests": ["Academic", "Professional"],
+      "contact": "Sharmaine Domingo",
+      "website": "www.timsaatuhm.com",
+      "email": "sd21@hawaii.edu"
+    },
+    {
+      "clubName": "Tropical Plant and Soil Sciences Graduate Student Organization",
+      "interests": ["Academic", "Professional"],
+      "contact": "Jaclyn Nicole R. Uy",
+      "website": "",
+      "email": "uyjnr69@hawaii.edu"
+    },
+    {
+      "clubName": "Ultrasound Interest Group at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Amandalin Rock",
+      "website": "",
+      "email": "rocka@hawaii.edu"
+    },
+    {
+      "clubName": "Volunteers for Intercultural and Definitive Adventures (VIDA)",
+      "interests": "Service",
+      "contact": "Airi Morita",
+      "website": "https://vidahawaii.wixsite.com/uhmanoa      http://www.vidavounteer.org",
+      "email": "airimori@hawaii.edu"
+    },
+    {
+      "clubName": "WADEM SIG at UHM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Gary Glauberman",
+      "website": "",
+      "email": "glauber@hawaii.edu"
+    },
+    {
+      "clubName": "Waikiki Acrobatics Troupe",
+      "interests": ["Leisure", "Recreational"],
+      "contact": "Liam Griffin",
+      "website": "",
+      "email": "liam9999@hawaii.edu"
+    },
+    {
+      "clubName": "Wesley Foundation @ UH Manoa",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Sateki Taulanga",
+      "website": "Wesleyfoundationhawaii.com",
+      "email": "st37@hawaii.edu"
+    },
+    {
+      "clubName": "Wilderness Medicine Hawaii",
+      "interests": ["Academic", "Professional"],
+      "contact": "Weston Mccue",
+      "website": "",
+      "email": "wmccue@hawaii.edu"
+    },
+    {
+      "clubName": "Women's Interest Group at JABSOM",
+      "interests": ["Academic", "Professional"],
+      "contact": "Amandalin Rock",
+      "website": "",
+      "email": "rocka@hawaii.edu"
+    },
+    {
+      "clubName": "Younglife",
+      "interests": ["Religious", "Spiritual"],
+      "contact": "Makenzie Hickey",
+      "website": "younglife.org",
+      "email": "mmhickey@hawaii.edu"
     }
   ]
 }
