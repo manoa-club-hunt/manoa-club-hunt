@@ -13,12 +13,11 @@ class ClubPage extends React.Component {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
-  /** Render the page once subscriptions have been received. */
+  /** UPDATE THIS SECTION TO DISPLAY CLUB DATA */
   renderPage() {
-    const club = this.props.clubs.filter(club => club.clubName === this.props.clubs.clubName);
     return (
         <Container>
-          <Header as="h2" textAlign="center">{club.clubName}</Header>
+          <Header as="h2" textAlign="center">{this.props.clubs.clubName}</Header>
         <hr/>
         </Container>
     );
@@ -32,7 +31,7 @@ ClubPage.propTypes = {
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
-export default withTracker(( match ) => {
+export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to club documents.
   const subscription = Meteor.subscribe('Clubs');
