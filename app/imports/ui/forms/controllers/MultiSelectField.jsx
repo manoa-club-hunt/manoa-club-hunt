@@ -1,13 +1,8 @@
 import React from 'react';
-
 import classnames from 'classnames';
-
 import connectField from 'uniforms/connectField';
-
 import filterDOMProps from 'uniforms/filterDOMProps';
-
 import { Dropdown } from 'semantic-ui-react';
-
 import { _ } from 'meteor/underscore';
 
 /**
