@@ -17,14 +17,13 @@ class ClubPage extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h1" textAlign="left">{this.props.clubs.clubName}</Header>
-          <Header as="h3" textAlign="left">{this.props.clubs.interests}</Header>
+          <Header as="h1" textAlign="left" >{this.props.clubs.clubName}</Header>
+          <Header as="h3" textAlign="left">Interest Areas: {this.props.clubs.interests}</Header>
+          <Header as="h3" textAlign="left">Club Info</Header>
           <div className="ui bulleted list">
-            <div className="item">Club Info
               <div className="item">Website: {this.props.clubs.website}</div>
               <div className="item">Contact: {this.props.clubs.contact}</div>
               <div className="item">Email: {this.props.clubs.email}</div>
-            </div>
           </div>
           <hr/>
         </Container>
