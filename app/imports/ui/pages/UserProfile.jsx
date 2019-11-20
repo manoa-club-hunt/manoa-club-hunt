@@ -39,7 +39,6 @@ class UserProfile extends React.Component {
         swal('Success', 'Profile updated', 'success');
       }
     });
-
   }
 
 
