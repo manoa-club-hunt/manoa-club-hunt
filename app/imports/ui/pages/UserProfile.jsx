@@ -87,11 +87,11 @@ UserProfile.propTypes = {
 };
 
 export default withTracker(() => {
-  const sub1 = Meteor.subscribe(interestsName);
-  const sub2 = Meteor.subscribe(userProfilesName);
-  const sub3 = Meteor.subscribe(userProfilesInterestsName);
-  const sub4 = Meteor.subscribe(userProfilesClubsName);
-  const sub5 = Meteor.subscribe(clubsName);
+  const sub1 = Meteor.subscribe(userProfilesName);
+  const sub2 = Meteor.subscribe(clubsName);
+  const sub3 = Meteor.subscribe(interestsName);
+  const sub4 = Meteor.subscribe(userProfilesInterestsName);
+  const sub5 = Meteor.subscribe(userProfilesClubsName);
   return {
     ready: sub1.ready() && sub2.ready() && sub3.ready() && sub4.ready() && sub5.ready(),
   };
