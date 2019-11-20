@@ -3,7 +3,7 @@ import { UserProfiles } from '../../api/userprofiles/UserProfiles';
 import { UserProfilesClubs } from '../../api/userprofiles/UserProfilesClubs';
 import { UserProfilesInterests } from '../../api/userprofiles/UserProfilesInterests';
 
-const updateProfileMethod = 'UserProfiles.update';
+const updateUserProfileMethod = 'UserProfiles.update';
 
 Meteor.methods({
   'UserProfiles.update'({ email, firstName, lastName, picture, interests, clubs }) {
@@ -15,4 +15,4 @@ Meteor.methods({
   },
 });
 
-export { updateProfileMethod };
+export { updateUserProfileMethod };
