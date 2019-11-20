@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Label } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { Link, withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Club extends React.Component {
@@ -30,7 +31,9 @@ class Club extends React.Component {
               {clubInterests.map((obj, index) => <Label key={index} size='small' content={obj} />)}
             </Card.Description>
             <Card.Description textAlign="center">
-              <a href="">View Profile</a>
+              <em>
+                <Link to={`/clubpage/${this.props.club._id}`}>View Profile</Link>
+              </em>
             </Card.Description>
           </Card.Content>
         </Card>
@@ -44,4 +47,4 @@ Club.propTypes = {
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */
-export default (Club);
+export default withRouter(Club);
