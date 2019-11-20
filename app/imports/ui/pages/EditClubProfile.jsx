@@ -13,7 +13,7 @@ import SimpleSchema from 'simpl-schema';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
-  clubName: String,
+  name: String,
   interests: Array,
   'interests.$': String,
   contact: String,
@@ -26,9 +26,9 @@ class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { clubName, interests, contact, website, email } = data;
+    const { name, interests, contact, website, email } = data;
     const owner = Meteor.user().username;
-    Clubs.insert({ clubName, interests, contact, website, email, owner },
+    Clubs.insert({ name, interests, contact, website, email, owner },
         (error) => {
           if (error) {
             swal('Error', error.message, 'error');
@@ -48,7 +48,7 @@ class EditClubProfile extends React.Component {
             <Header as="h2" textAlign="center">Edit Club</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='clubName'/>
+                <TextField name='name'/>
                 <ListField name='interests'>
                   <TextField name='$' />
                 </ListField>
