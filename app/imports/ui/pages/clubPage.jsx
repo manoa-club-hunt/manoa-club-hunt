@@ -3,10 +3,12 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class clubPage extends React.Component {
+
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -17,15 +19,17 @@ class clubPage extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">{this.props.clubs.clubName}</Header>
-          {this.props.clubs.website}
-          <br />
-          {this.props.clubs.email}
-          <br />
-          {this.props.clubs.interests}
-          <br />
-          {this.props.clubs.contact}
-        <hr/>
+          <Header as="h1" textAlign="left" >{this.props.clubs.clubName}</Header>
+          <Header as="h3" textAlign="left">
+            Interest Area(s): {this.props.clubs.interests.reduce((memo, interest) => ` ${memo} ${interest}`)}</Header>
+          <Header as="h3" textAlign="left">Club Info</Header>
+          <div className="ui bulleted list">
+            <div className="item">Website: {this.props.clubs.website}</div>
+            <div className="item">Contact: {this.props.clubs.contact}</div>
+            <div className="item">Email: {this.props.clubs.email}</div>
+          </div>
+          <Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>
+          <hr/>
         </Container>
     );
   }
