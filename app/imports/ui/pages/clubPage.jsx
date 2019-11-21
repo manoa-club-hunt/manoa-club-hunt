@@ -24,7 +24,7 @@ class clubPage extends React.Component {
             Interest Area(s): {this.props.clubs.interests.reduce((memo, interest) => ` ${memo} ${interest}`)}</Header>
           <Header as="h3" textAlign="left">Club Info</Header>
           <div className="ui bulleted list">
-            <div className="item">Website: {this.props.clubs.website}</div>
+            <div className="item">Website: <a href={this.props.clubs.website}>{this.props.clubs.website}</a></div>
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
           </div>

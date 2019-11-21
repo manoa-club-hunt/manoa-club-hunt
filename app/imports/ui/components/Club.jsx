@@ -20,7 +20,7 @@ class Club extends React.Component {
             </Card.Description>
             <Card.Description>
               <b>Website: </b>
-              <a href="this.props.club.website">{this.props.club.website}</a>
+              <a href={this.props.club.website}>{this.props.club.website}</a>
             </Card.Description>
             <Card.Description>
               <b>Email: </b>
