@@ -9,6 +9,8 @@ import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
@@ -25,28 +27,22 @@ const formSchema = new SimpleSchema({
 class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
-  submit(data, formRef) {
+  submit(data) {
     const { name, interests, contact, website, email } = data;
     const owner = Meteor.user().username;
-    Clubs.insert({ name, interests, contact, website, email, owner },
-        (error) => {
-          if (error) {
-            swal('Error', error.message, 'error');
-          } else {
-            swal('Success', 'Item edited successfully', 'success');
-            formRef.reset();
-          }
-        });
+    Clubs.update({ name, interests, contact, website, email, owner },
+        (error) => (error ?
+            swal('Error', error.message, 'error') :
+            swal('Success', 'Item updated successfully', 'success')));
   }
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
-    let fRef = null;
     return (
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Club</Header>
-            <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
+            <AutoForm schema={formSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
                 <TextField name='name'/>
                 <ListField name='interests'>
@@ -65,4 +61,21 @@ class EditClubProfile extends React.Component {
   }
 }
 
-export default EditClubProfile;
+/** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
+EditClubProfile.propTypes = {
+  doc: PropTypes.object,
+  model: PropTypes.object,
+  ready: PropTypes.bool.isRequired,
+};
+
+/** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
+export default withTracker(({ match }) => {
+  // Get the documentID from the URL field. See imports/ui/layouts/App.jsx for the route containing :_id.
+  const documentId = match.params._id;
+  // Get access to Stuff documents.
+  const subscription = Meteor.subscribe('Clubs');
+  return {
+    doc: Clubs.findOne(documentId),
+    ready: subscription.ready(),
+  };
+})(EditClubProfile);
