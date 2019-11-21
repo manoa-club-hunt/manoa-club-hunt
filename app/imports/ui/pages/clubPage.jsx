@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-class ClubPage extends React.Component {
+class clubPage extends React.Component {
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -32,8 +32,8 @@ class ClubPage extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-ClubPage.propTypes = {
-  clubs: PropTypes.array.isRequired,
+clubPage.propTypes = {
+  clubs: PropTypes.object.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -46,4 +46,4 @@ export default withTracker(({ match }) => {
     clubs: Clubs.findOne(documentId),
     ready: subscription.ready(),
   };
-})(ClubPage);
+})(clubPage);
