@@ -1,9 +1,10 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, List, Loader } from 'semantic-ui-react';
+import { Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
+import { Link } from 'react-router-dom';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class clubPage extends React.Component {
@@ -23,13 +24,11 @@ class clubPage extends React.Component {
             Interest Area(s): {this.props.clubs.interests.reduce((memo, interest) => ` ${memo} ${interest}`)}</Header>
           <Header as="h3" textAlign="left">Club Info</Header>
           <div className="ui bulleted list">
-              <div className="item">Website: {this.props.clubs.website}</div>
-              <div className="item">Contact: {this.props.clubs.contact}</div>
-              <div className="item">Email: {this.props.clubs.email}</div>
+            <div className="item">Website: {this.props.clubs.website}</div>
+            <div className="item">Contact: {this.props.clubs.contact}</div>
+            <div className="item">Email: {this.props.clubs.email}</div>
           </div>
-          <List link>
-            <List.Item as='a'>Edit Club</List.Item>
-          </List>
+          <Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>
           <hr/>
         </Container>
     );
