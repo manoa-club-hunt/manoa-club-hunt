@@ -196,7 +196,7 @@
     },
     {
       "clubName": "Artists and Musicians at JABSOM",
-      "interests": "Adademic, Professional",
+      "interests": ["Adademic", "Professional"],
       "contact": "Amandalin Rock",
       "website": "",
       "email": "rocka@hawaii.edu"
@@ -630,7 +630,7 @@
     },
     {
       "clubName": "Hawaii African Dance and Drum Club RIO at UHM",
-      "interests": "Recreation, Leisure",
+      "interests": ["Recreation", "Leisure"],
       "contact": "Elizabeth (Liza) Simon",
       "website": "",
       "email": "csimon@hawaii.edu"

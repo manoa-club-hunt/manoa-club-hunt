@@ -25,7 +25,7 @@ function addClubs(data) {
   console.log(`   Adding: ${data.clubName}`);
   Clubs.insert(data);
   data.interests.forEach(function (interest) {
-        if (!(_.contains(Interests.find().fetch(), interest))) {
+        if (!(_.contains(_.pluck(Interests.find().fetch(), 'interest'), interest))) {
           Interests.insert({ interest: interest });
         }
       });
@@ -42,7 +42,7 @@ function addUsers(data) {
   console.log(`   Adding: ${data.firstName} ${data.lastName}`);
   UserProfiles.insert(data);
   data.interests.forEach(function (interest) {
-    if (!(_.contains(Interests.find().fetch(), interest))) {
+    if (!(_.contains(_.pluck(Interests.find().fetch(), 'interest'), interest))) {
       Interests.insert({ interest: interest });
     }
   });
