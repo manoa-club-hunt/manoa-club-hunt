@@ -8,6 +8,8 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import ListClubs from '../pages/ListClubs';
+import UserProfile from '../pages/UserProfile';
+import UserHome from '../pages/UserHome';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddClub from '../pages/AddClub';
 import EditStuff from '../pages/EditStuff';
@@ -15,7 +17,6 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
-import UserProfile from '../pages/UserProfile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -31,6 +32,7 @@ class App extends React.Component {
               <Route path="/list" component={ListClubs}/>
               <ProtectedRoute path="/add" component={AddClub}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
+              <ProtectedRoute path="/userhome" component={UserHome}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
