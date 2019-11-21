@@ -11,7 +11,11 @@ const UserProfilesSchema = new SimpleSchema({
   firstName: String,
   lastName: String,
   email: String,
-  picture: String,
+  picture: { type: String, optional: true },
+  interests: Array,
+  'interests.$': String,
+  clubs: Array,
+  'clubs.$': String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

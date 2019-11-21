@@ -13,8 +13,6 @@ import PropTypes from 'prop-types';
 import MultiSelectField from '../forms/controllers/MultiSelectField';
 import { Interests, interestsName } from '../../api/interests/Interests';
 import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
-import { UserProfilesClubs, userProfilesClubsName } from '../../api/userprofiles/UserProfilesClubs';
-import { UserProfilesInterests, userProfilesInterestsName } from '../../api/userprofiles/UserProfilesInterests';
 import { Clubs, clubsName } from '../../api/club/Club';
 import { updateUserProfileMethod } from '../../startup/both/Methods';
 
@@ -51,10 +49,8 @@ class UserProfile extends React.Component {
     const allInterests = _.pluck(Interests.find().fetch(), 'name');
     const allClubs = _.pluck(Clubs.find().fetch(), 'name');
     const formSchema = makeSchema(allInterests, allClubs);
-    const clubs = _.pluck(UserProfilesClubs.find({ profile: email }).fetch(), 'club');
-    const interests = _.pluck(UserProfilesInterests.find({ profile: email }).fetch(), 'interest');
     const userProfile = UserProfiles.findOne({ email });
-    const model = _.extend({}, userProfile, { interests, clubs });
+    const model = _.extend({}, userProfile);
     return (
         <Grid container centered>
           <Grid.Column>
@@ -90,9 +86,7 @@ export default withTracker(() => {
   const sub1 = Meteor.subscribe(userProfilesName);
   const sub2 = Meteor.subscribe(clubsName);
   const sub3 = Meteor.subscribe(interestsName);
-  const sub4 = Meteor.subscribe(userProfilesInterestsName);
-  const sub5 = Meteor.subscribe(userProfilesClubsName);
   return {
-    ready: sub1.ready() && sub2.ready() && sub3.ready() && sub4.ready() && sub5.ready(),
+    ready: sub1.ready() && sub2.ready() && sub3.ready(),
   };
 })(UserProfile);

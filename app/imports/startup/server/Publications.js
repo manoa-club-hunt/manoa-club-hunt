@@ -3,8 +3,6 @@ import { Roles } from 'meteor/alanning:roles';
 import { Stuffs } from '../../api/stuff/Stuff';
 import { Clubs } from '../../api/club/Club';
 import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
-import { UserProfilesInterests, userProfilesInterestsName } from '../../api/userprofiles/UserProfilesInterests';
-import { UserProfilesClubs, userProfilesClubsName } from '../../api/userprofiles/UserProfilesClubs';
 import { Interests, interestsName } from '../../api/interests/Interests';
 
 /** This subscription publishes only the documents associated with the logged in user */
@@ -30,14 +28,6 @@ Meteor.publish('Clubs', function publish() {
 
 Meteor.publish(userProfilesName, function publish() {
   return UserProfiles.find();
-});
-
-Meteor.publish(userProfilesInterestsName, function publish() {
-  return UserProfilesInterests.find();
-});
-
-Meteor.publish(userProfilesClubsName, function publish() {
-  return UserProfilesClubs.find();
 });
 
 Meteor.publish(interestsName, function publish() {
