@@ -1,8 +1,9 @@
 import React from 'react';
-import { Header, Loader, Container, List } from 'semantic-ui-react';
+import { Header, Loader, Container, List, Button } from 'semantic-ui-react';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
 
@@ -30,6 +31,7 @@ class UserProfile extends React.Component {
             <List.Item><Header as="h3">Image URL:</Header></List.Item>
             <List.Item><p>{userProfile.image}</p></List.Item>
           </List>
+          <Link to="/edituserprofile"><Button>Edit Profile</Button></Link>
         </Container>
     );
   }
