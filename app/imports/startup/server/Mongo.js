@@ -2,6 +2,8 @@ import { Meteor } from 'meteor/meteor';
 import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Clubs } from '../../api/club/Club.js';
 
+const defaultClubs = JSON.parse(Assets.getText('uhclubs.json'));
+
 /* eslint-disable no-console */
 
 /** Initialize the database with a default data document. */
@@ -24,8 +26,8 @@ function addData1(data) {
 }
 
 if (Clubs.find().count() === 0) {
-  if (Meteor.settings.defaultClubs) {
+  if (defaultClubs) {
     console.log('Creating default clubs.');
-    Meteor.settings.defaultClubs.map(data => addData1(data));
+    defaultClubs.map(data => addData1(data));
   }
 }
