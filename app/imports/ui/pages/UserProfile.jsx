@@ -66,7 +66,7 @@ class UserProfile extends React.Component {
                   <TextField name='lastName' showInlineError={true} placeholder={'Last Name'}/>
                 </Form.Group>
                 <Form.Group widths={'equal'}>
-                  <TextField name='email' showInlineError={true} placeholder={'email'} disabled/>
+                  <TextField name='email' showInlineError={true} placeholder={'email'}/>
                   <TextField name='picture' showInlineError={true} placeholder={'URL to picture'}/>
                 </Form.Group>
                 <Form.Group widths={'equal'}>
