@@ -6,7 +6,8 @@ import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
-class ClubPage extends React.Component {
+class clubPage extends React.Component {
+
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -18,13 +19,15 @@ class ClubPage extends React.Component {
     return (
         <Container>
           <Header as="h1" textAlign="left" >{this.props.clubs.clubName}</Header>
-          <Header as="h3" textAlign="left">Interest Area(s): {this.props.clubs.interests}</Header>
+          <Header as="h3" textAlign="left">
+            Interest Area(s): {this.props.clubs.interests.reduce((memo, interest) => ` ${memo} ${interest}`)}</Header>
           <Header as="h3" textAlign="left">Club Info</Header>
           <div className="ui bulleted list">
               <div className="item">Website: {this.props.clubs.website}</div>
               <div className="item">Contact: {this.props.clubs.contact}</div>
               <div className="item">Email: {this.props.clubs.email}</div>
           </div>
+
           <hr/>
         </Container>
     );
@@ -32,7 +35,7 @@ class ClubPage extends React.Component {
 }
 
 /** Require an array of Stuff documents in the props. */
-ClubPage.propTypes = {
+clubPage.propTypes = {
   clubs: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
@@ -46,4 +49,4 @@ export default withTracker(({ match }) => {
     clubs: Clubs.findOne(documentId),
     ready: subscription.ready(),
   };
-})(ClubPage);
+})(clubPage);
