@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader } from 'semantic-ui-react';
+import { Container, Header, List, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
@@ -27,7 +27,9 @@ class clubPage extends React.Component {
               <div className="item">Contact: {this.props.clubs.contact}</div>
               <div className="item">Email: {this.props.clubs.email}</div>
           </div>
-
+          <List link>
+            <List.Item as='a'>Edit Club</List.Item>
+          </List>
           <hr/>
         </Container>
     );
@@ -36,7 +38,7 @@ class clubPage extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 clubPage.propTypes = {
-  clubs: PropTypes.array.isRequired,
+  clubs: PropTypes.object.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
