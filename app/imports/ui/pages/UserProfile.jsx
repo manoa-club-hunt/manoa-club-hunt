@@ -23,7 +23,7 @@ const makeSchema = (allInterests, allClubs) => new SimpleSchema({
   picture: { type: String, label: 'Picture URL', optional: true },
   interests: { type: Array, label: 'Interests', optional: true },
   'interests.$': { type: String, allowedValues: allInterests },
-  clubs: { type: Array, label: 'Projects', optional: true },
+  clubs: { type: Array, label: 'Clubs', optional: true },
   'clubs.$': { type: String, allowedValues: allClubs },
 });
 
@@ -46,8 +46,8 @@ class UserProfile extends React.Component {
 
   renderPage() {
     const email = Meteor.user().username;
-    const allInterests = _.pluck(Interests.find().fetch(), 'name');
-    const allClubs = _.pluck(Clubs.find().fetch(), 'name');
+    const allInterests = _.pluck(Interests.find().fetch(), 'interest');
+    const allClubs = _.pluck(Clubs.find().fetch(), 'clubName');
     const formSchema = makeSchema(allInterests, allClubs);
     const userProfile = UserProfiles.findOne({ email });
     const model = _.extend({}, userProfile);
