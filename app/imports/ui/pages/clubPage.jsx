@@ -18,7 +18,7 @@ class ClubPage extends React.Component {
     return (
         <Container>
           <Header as="h1" textAlign="left" >{this.props.clubs.clubName}</Header>
-          <Header as="h3" textAlign="left">Interest Areas: {this.props.clubs.interests}</Header>
+          <Header as="h3" textAlign="left">Interest Area(s): {this.props.clubs.interests}</Header>
           <Header as="h3" textAlign="left">Club Info</Header>
           <div className="ui bulleted list">
               <div className="item">Website: {this.props.clubs.website}</div>
