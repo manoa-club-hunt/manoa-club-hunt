@@ -1,6 +1,5 @@
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
-import { Stuffs } from '../../api/stuff/Stuff.js';
 import { Clubs } from '../../api/club/Club.js';
 import { Interests } from '../../api/interests/Interests';
 import { UserProfiles } from '../../api/userprofiles/UserProfiles';
@@ -9,20 +8,6 @@ const defaultClubs = JSON.parse(Assets.getText('uhclubs.json'));
 
 /* eslint-disable no-console */
 
-/** Initialize the database with a default data document. */
-function addData(data) {
-  console.log(`  Adding: ${data.name} (${data.owner})`);
-  Stuffs.insert(data);
-}
-
-/** Initialize the collection if empty. */
-if (Stuffs.find().count() === 0) {
-  if (Meteor.settings.defaultData) {
-    console.log('Creating default data.');
-    Meteor.settings.defaultData.map(data => addData(data));
-  }
-}
-
 function addClubs(data) {
   console.log(`   Adding: ${data.clubName}`);
   Clubs.insert(data);
@@ -30,16 +15,13 @@ function addClubs(data) {
         if (!(_.contains(_.pluck(Interests.find().fetch(), 'interest'), interest))) {
           Interests.insert({ interest: interest });
         }
-      });
+  });
 }
 
 if (Clubs.find().count() === 0) {
   if (defaultClubs) {
     console.log('Creating default clubs.');
-<<<<<<< HEAD
-    defaultClubs.map(data => addData1(data));
-=======
-    Meteor.settings.defaultClubs.map(data => addClubs(data));
+    defaultClubs.map(data => addClubs(data));
   }
 }
 
@@ -57,6 +39,5 @@ if (UserProfiles.find().count() === 0) {
   if (Meteor.settings.defaultUserProfiles) {
     console.log('Creating default user profiles.');
     Meteor.settings.defaultUserProfiles.map(data => addUsers(data));
->>>>>>> origin/issue-12
   }
 }

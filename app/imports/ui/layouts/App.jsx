@@ -16,12 +16,9 @@ import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
-<<<<<<< HEAD
 import EditClubProfile from '../pages/EditClubProfile';
-=======
 import UserProfile from '../pages/UserProfile';
 import EditUserProfile from '../pages/EditUserProfile';
->>>>>>> origin/issue-12
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -36,16 +33,12 @@ class App extends React.Component {
               <Route path="/signup" component={Signup}/>
               <Route path="/list" component={ListClubs}/>
               <ProtectedRoute path="/add" component={AddClub}/>
-<<<<<<< HEAD
               <ProtectedRoute path="/userhome" component={UserHome}/>
               <ProtectedRoute path="/edit" component={EditClubProfile}/>
               <ProtectedRoute path="/clubpage/:_id" component={clubPage}/>
               <ProtectedRoute path="/edit/:_id" component={EditClubProfile}/>
-=======
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
               <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
->>>>>>> origin/issue-12
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
