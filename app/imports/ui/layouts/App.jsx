@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import UserHome from '../pages/UserHome';
 import ListClubs from '../pages/ListClubs';
+import EditStuff from '../pages/EditStuff';
 import clubPage from '../pages/clubPage';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddClub from '../pages/AddClub';
@@ -34,18 +35,14 @@ class App extends React.Component {
               <Route path="/list" component={ListClubs}/>
               <ProtectedRoute path="/add" component={AddClub}/>
               <ProtectedRoute path="/userhome" component={UserHome}/>
-<<<<<<< HEAD
               <ProtectedRoute path="/edit" component={EditClubProfile}/>
               <ProtectedRoute path="/clubpage/:_id" component={clubPage}/>
               <ProtectedRoute path="/edit/:_id" component={EditClubProfile}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
               <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
-=======
-              <ProtectedRoute path="/clubpage/:_id" component={ClubPage}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
               <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
->>>>>>> origin/issue-10
               <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
