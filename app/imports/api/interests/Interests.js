@@ -2,22 +2,17 @@ import { Mongo } from 'meteor/mongo';
 import SimpleSchema from 'simpl-schema';
 import { Tracker } from 'meteor/tracker';
 
-const clubsName = 'Clubs';
+const interestsName = 'Interests';
 /** Define a Mongo collection to hold the data. */
-const Clubs = new Mongo.Collection(clubsName);
+const Interests = new Mongo.Collection(interestsName);
 
 /** Define a schema to specify the structure of each document in the collection. */
-const ClubSchema = new SimpleSchema({
-  clubName: String,
-  interests: Array,
-  'interests.$': String,
-  contact: String,
-  website: { type: String, defaultValue: '' },
-  email: { type: String, defaultValue: '' },
+const InterestsSchema = new SimpleSchema({
+  interest: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
-Clubs.attachSchema(ClubSchema);
+Interests.attachSchema(InterestsSchema);
 
 /** Make the collection and schema available to other code. */
-export { Clubs, ClubSchema, clubsName };
+export { Interests, InterestsSchema, interestsName };
