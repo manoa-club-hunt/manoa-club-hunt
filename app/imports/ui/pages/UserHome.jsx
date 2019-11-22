@@ -1,32 +1,35 @@
 import React from 'react';
-import { Clubs } from '/imports/api/club/Club';
-import { Feed, Icon, Container } from 'semantic-ui-react';
-import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
-import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
+import { Container, Card, Header, Loader } from 'semantic-ui-react';
+import Club from '/imports/ui/components/Club';
+import { _ } from 'meteor/underscore';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
+import { Clubs, clubsName } from '../../api/club/Club';
+import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
 
-/** Renders the Page for adding a document. */
 class UserHome extends React.Component {
 
-  /** On submit, insert the data. */
-  submit(data, formRef) {
-    const { clubName, interests, contact, website, email } = data;
-    const owner = Meteor.user().username;
-    Clubs.insert({ clubName, interests, contact, website, email, owner },
-      (error) => {
-        if (error) {
-          swal('Error', error.message, 'error');
-        } else {
-          swal('Success', 'Item added successfully', 'success');
-          formRef.reset();
-        }
-      });
+  render() {
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
-  /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
-  render() {
+  renderPage() {
+    const clubsList = this.props.clubs;
+    const email = Meteor.user().username;
+    const userProfile = UserProfiles.findOne({ email });
+    const userClubs = [];
+    userProfile.interests.forEach(function (interest) {
+      clubsList.forEach(function (club) {
+        if (_.contains(club.interests, interest)) {
+          userClubs.push(club);
+        }
+      });
+    });
+    const sortedClubs = userClubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
     return (
         <Container>
+<<<<<<< HEAD
           <Feed>
             <Feed.Event>
               <Feed.Label>
@@ -104,9 +107,28 @@ class UserHome extends React.Component {
               </Feed.Content>
             </Feed.Event>
           </Feed>
+=======
+          <Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>
+          <hr/>
+          <Card.Group centered itemsPerRow={4}>
+            {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
+          </Card.Group>
+>>>>>>> origin/issue-10
         </Container>
     );
   }
 }
 
-export default UserHome;
+UserHome.propTypes = {
+  clubs: PropTypes.array.isRequired,
+  ready: PropTypes.bool.isRequired,
+};
+
+export default withTracker(() => {
+  const sub1 = Meteor.subscribe(clubsName);
+  const sub2 = Meteor.subscribe(userProfilesName);
+  return {
+    clubs: Clubs.find({}).fetch(),
+    ready: sub1.ready() && sub2.ready(),
+  };
+})(UserHome);
