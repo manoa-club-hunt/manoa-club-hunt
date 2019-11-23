@@ -4,6 +4,7 @@ import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import ListField from 'uniforms-semantic/ListField';
+import LongTextField from 'uniforms-semantic/src/LongTextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
@@ -19,6 +20,8 @@ const formSchema = new SimpleSchema({
   contact: String,
   website: { type: String, defaultValue: '' },
   email: { type: String, defaultValue: '' },
+  image: { type: String, defaultValue: ''},
+  description: { type: String, defaultValue: 'No description available.' },
   });
 
 /** Renders the Page for adding a document. */
@@ -26,9 +29,9 @@ class AddClub extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { clubName, interests, contact, website, email } = data;
+    const { clubName, interests, contact, website, email, image, description } = data;
     const owner = Meteor.user().username;
-    Clubs.insert({ clubName, interests, contact, website, email, owner },
+    Clubs.insert({ clubName, interests, contact, website, email, image, description, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -55,6 +58,8 @@ class AddClub extends React.Component {
                 <TextField name='contact'/>
                 <TextField name='website'/>
                 <TextField name='email'/>
+                <LongTextField name='image'/>
+                <LongTextField name='description'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
