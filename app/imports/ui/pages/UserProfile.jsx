@@ -16,6 +16,14 @@ class UserProfile extends React.Component {
   renderPage() {
     const email = Meteor.user().username;
     const userProfile = UserProfiles.findOne({ email });
+    let userInterests = '';
+    let userClubs = '';
+    if (userProfile.interests.length > 0) {
+      userInterests = userProfile.interests.reduce((memo, interest) => `${memo}, ${interest}`);
+    }
+    if (userProfile.clubs.length > 0) {
+      userClubs = userProfile.clubs.reduce((memo, interest) => `${memo}, ${interest}`);
+    }
     return (
         <Container>
           <Header as="h2" textAlign="center">Your Profile</Header>
@@ -25,9 +33,9 @@ class UserProfile extends React.Component {
             <List.Item><Header as="h3">Last Name:</Header></List.Item>
             <List.Item><p>{userProfile.lastName}</p></List.Item>
             <List.Item><Header as="h3">Interests:</Header></List.Item>
-            <List.Item><p>{userProfile.interests.reduce((memo, interest) => `${memo}, ${interest}`)}</p></List.Item>
+            <List.Item><p>{userInterests}</p></List.Item>
             <List.Item><Header as="h3">Clubs:</Header></List.Item>
-            <List.Item><p>{userProfile.clubs.reduce((memo, interest) => `${memo}, ${interest}`)}</p></List.Item>
+            <List.Item><p>{userClubs}</p></List.Item>
             <List.Item><Header as="h3">Image URL:</Header></List.Item>
             <List.Item><p>{userProfile.image}</p></List.Item>
           </List>
