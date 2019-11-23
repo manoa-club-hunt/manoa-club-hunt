@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Header, Form, Loader } from 'semantic-ui-react';
+import { Grid, Segment, Header, Form, Loader, Button } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import SubmitField from 'uniforms-semantic/SubmitField';
@@ -9,6 +9,7 @@ import SimpleSchema from 'simpl-schema';
 import { Meteor } from 'meteor/meteor';
 import { _ } from 'meteor/underscore';
 import { withTracker } from 'meteor/react-meteor-data';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import MultiSelectField from '../forms/controllers/MultiSelectField';
 import { Interests, interestsName } from '../../api/interests/Interests';
@@ -70,6 +71,7 @@ class UserProfile extends React.Component {
                   <MultiSelectField name='clubs' showInlineError={true} placeholder={'Clubs'}/>
                 </Form.Group>
                 <SubmitField value='Save'/>
+                <Link to="/userprofile"><Button>Cancel</Button></Link>
               </Segment>
             </AutoForm>
           </Grid.Column>
