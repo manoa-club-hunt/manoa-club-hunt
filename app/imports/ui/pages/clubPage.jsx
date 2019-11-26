@@ -27,6 +27,8 @@ class clubPage extends React.Component {
             <div className="item">Website: <a href={this.props.clubs.website}>{this.props.clubs.website}</a></div>
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
+            <div className="item">Description: {this.props.clubs.description}</div>
+            <div className="item">{this.props.clubs.image}</div>
           </div>
           <Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>
           <hr/>
