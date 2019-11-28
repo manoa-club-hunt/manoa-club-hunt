@@ -15,7 +15,7 @@ class Landing extends React.Component {
               <Grid.Column>
                 <Header as="h3" inverted>
                   Looking for a club? Ready to find the one for you? Like E-Harmony, we find the perfect match for you.
-                  With the Manoa Club Hunt, we use a scientific algorithm to find people who are looking for people like
+                  With the Manoa Club Hunt, we use a scientific algorithm to find clubs who are looking for people like
                   you. Get started today by registering for a free user profile on Manoa Club Hunt. So what are you
                   waiting for? Use Manoa Club Hunt today.
                 </Header>
