@@ -5,7 +5,7 @@ import { Grid } from 'semantic-ui-react';
 class Footer extends React.Component {
   render() {
     const layout = { paddingTop: '20px', paddingBottom: '20px', width: '100%', background: '#024731' };
-    const divStyle = { color: 'white', marginTop: '10px' };
+    const divStyle = { color: 'white', marginTop: '20px' };
     return (
         <footer>
           <div style={divStyle}>

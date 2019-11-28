@@ -13,8 +13,6 @@ class ListClubs extends React.Component {
 
   handleChange = (e, { value }) => this.setState({ value })
 
-  handleSearchChange = (e, { value }) => this.setState({ value })
-
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
@@ -22,27 +20,29 @@ class ListClubs extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-      const { value } = this.state;
+    const { value } = this.state;
 
-      const interestOptions = this.props.interests.map(int => ({
+    const interestOptions = this.props.interests.map(int => ({
       key: int.interest,
       text: int.interest,
       value: int.interest,
     }));
     let ClubList = this.props.clubs;
     ClubList = ClubList.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
-    ClubList = ClubList.filter(a => a.interests.indexOf(this.state.value) !== -1);
+    if (this.state.value !== '') {
+      ClubList = ClubList.filter(a => a.interests.indexOf(this.state.value) > -1);
+    }
 
     return (
         <Container>
           <Header as="h2" textAlign="center">Club Listings</Header>
           <hr/>
           <Dropdown
+              clearable
               placeholder='Select Interest'
               fluid
               value={value}
               onChange={this.handleChange}
-              onSearchChange={this.handleSearchChange}
               search
               selection
               options={interestOptions}
