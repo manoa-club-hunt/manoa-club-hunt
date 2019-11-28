@@ -2,20 +2,18 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import { Container, Card, Header, Loader, Dropdown } from 'semantic-ui-react';
 import Club from '/imports/ui/components/Club';
-import { _ } from 'meteor/underscore';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Clubs } from '../../api/club/Club';
 import { Interests } from '../../api/interests/Interests';
 
-/** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class ListClubs extends React.Component {
 
-  state = { searchQuery: '' }
+  state = { value: '' }
 
-  handleChange = (e, { searchQuery, value }) => this.setState({ searchQuery, value })
+  handleChange = (e, { value }) => this.setState({ value })
 
-  handleSearchChange = (e, { searchQuery }) => this.setState({ searchQuery })
+  handleSearchChange = (e, { value }) => this.setState({ value })
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -24,15 +22,16 @@ class ListClubs extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    const interestOptions = this.props.interests.map(int => ({
+      const { value } = this.state;
+
+      const interestOptions = this.props.interests.map(int => ({
       key: int.interest,
       text: int.interest,
       value: int.interest,
     }));
     let ClubList = this.props.clubs;
     ClubList = ClubList.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
-
-    const { searchQuery, value } = this.state;
+    ClubList = ClubList.filter(a => a.interests.indexOf(this.state.value) !== -1);
 
     return (
         <Container>
@@ -41,12 +40,10 @@ class ListClubs extends React.Component {
           <Dropdown
               placeholder='Select Interest'
               fluid
-              multiple
+              value={value}
               onChange={this.handleChange}
               onSearchChange={this.handleSearchChange}
               search
-              searchQuery={searchQuery}
-              value={value}
               selection
               options={interestOptions}
           />
