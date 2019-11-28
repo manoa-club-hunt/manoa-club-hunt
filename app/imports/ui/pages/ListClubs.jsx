@@ -19,17 +19,24 @@ class ListClubs extends React.Component {
   renderPage() {
     let ClubList = this.props.clubs;
     ClubList = ClubList.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
+
+    const intOptions = this.props.interests.map(int => ({
+      key: int.interest,
+      text: int.interest,
+      value: int.interest,
+    }));
     return (
         <Container>
           <Header as="h2" textAlign="center">Club Listings</Header>
-        <hr/>
+          <hr/>
           <Dropdown
-            placeholder='Select Interest'
-            fluid
-            search
-            selection
-            options={this.props.interests}
+              placeholder='Select Interest'
+              fluid
+              search
+              selection
+              options={intOptions}
           />
+          <br/>
           <Card.Group centered itemsPerRow={4}>
             {ClubList.map((club, index) => <Club key={index} club={club}/>)}
           </Card.Group>
@@ -48,10 +55,11 @@ ListClubs.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('Clubs', 'Interests');
+  const subscription = Meteor.subscribe('Clubs');
+  const subscription1 = Meteor.subscribe('Interests');
   return {
     clubs: Clubs.find({}).fetch(),
     interests: Interests.find({}).fetch(),
-    ready: subscription.ready(),
+    ready: subscription.ready() && subscription1.ready(),
   };
 })(ListClubs);
