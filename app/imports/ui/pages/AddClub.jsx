@@ -3,19 +3,22 @@ import { Clubs } from '/imports/api/club/Club';
 import { Grid, Segment, Header } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import ListField from 'uniforms-semantic/ListField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
+import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
+import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
+import MultiSelectField from '../forms/controllers/MultiSelectField';
+import { Interests } from '../../api/interests/Interests';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
-const formSchema = new SimpleSchema({
+const makeSchema = (allInterests) => new SimpleSchema({
   clubName: String,
   interests: Array,
-  'interests.$': String,
+  'interests.$': { type: String, allowedValues: allInterests },
   contact: String,
   website: { type: String, defaultValue: '' },
   email: { type: String, defaultValue: '' },
@@ -42,6 +45,8 @@ class AddClub extends React.Component {
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   render() {
     let fRef = null;
+    const allInterests = _.pluck(Interests.find().fetch(), 'interest');
+    const formSchema = makeSchema(allInterests);
     return (
         <Grid container centered>
           <Grid.Column>
@@ -49,9 +54,7 @@ class AddClub extends React.Component {
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
                 <TextField name='clubName'/>
-                <ListField name='interests'>
-                  <TextField name='$' />
-                </ListField>
+                <MultiSelectField name='interests'/>
                 <TextField name='contact'/>
                 <TextField name='website'/>
                 <TextField name='email'/>
@@ -65,4 +68,15 @@ class AddClub extends React.Component {
   }
 }
 
-export default AddClub;
+AddClub.propTypes = {
+  ready: PropTypes.bool.isRequired,
+  interests: PropTypes.array.isRequired,
+};
+
+export default withTracker(() => {
+  const subscription = Meteor.subscribe('Interests');
+  return {
+    interests: Interests.find({}).fetch(),
+    ready: subscription.ready(),
+  };
+})(AddClub);
