@@ -6,8 +6,11 @@ import { Link, withRouter } from 'react-router-dom';
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Club extends React.Component {
   render() {
-    const clubsite = this.props.club.website;
-    return (
+    let clubsite = this.props.club.website;
+    if (clubsite === '') {
+      clubsite = '/#/notfoundclub';
+    }
+  return (
         <Card centered>
           <Card.Content textAlign="center" header={this.props.club.clubName} />
           <Card.Content textAlign="center">
