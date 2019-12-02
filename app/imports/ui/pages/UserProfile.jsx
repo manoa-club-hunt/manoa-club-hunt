@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Loader, Container, List, Button } from 'semantic-ui-react';
+import { Header, Loader, Grid, List, Button, Image } from 'semantic-ui-react';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -33,8 +33,9 @@ class UserProfile extends React.Component {
       }
     }
     return (
-        <Container className="user-profile-background">
+        <Grid container centered columns={2} className="user-profile-background">
           <Header as="h2" textAlign="center">Your Profile</Header>
+          <Grid.Column>
           <List>
             <List.Item><Header as="h3">First Name:</Header></List.Item>
             <List.Item><p className="user profile list item">{userProfile.firstName}</p></List.Item>
@@ -45,8 +46,12 @@ class UserProfile extends React.Component {
             <List.Item><Header as="h3">Clubs:</Header></List.Item>
             <List.Item><p className="user profile list item">{userClubs}</p></List.Item>
           </List>
+          </Grid.Column>
+          <Grid.Column>
+            <Image size="tiny" src={userProfile.picture} alt="Profile picture"/>
+          </Grid.Column>
           <Link to="/edituserprofile"><Button>Edit Profile</Button></Link>
-        </Container>
+        </Grid>
     );
   }
 }
