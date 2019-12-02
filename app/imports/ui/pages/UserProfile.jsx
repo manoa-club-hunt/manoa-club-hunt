@@ -18,26 +18,32 @@ class UserProfile extends React.Component {
     const userProfile = UserProfiles.findOne({ email });
     let userInterests = '';
     let userClubs = '';
-    if (userProfile.interests.length > 0) {
-      userInterests = userProfile.interests.reduce((memo, interest) => `${memo}, ${interest}`);
+    for (let i = 0; i < userProfile.interests.length; i++) {
+      if (i === userProfile.interests.length - 1) {
+        userInterests += userProfile.interests[i];
+      } else {
+        userInterests += `${userProfile.interests[i]}, `;
+      }
     }
-    if (userProfile.clubs.length > 0) {
-      userClubs = userProfile.clubs.reduce((memo, interest) => `${memo}, ${interest}`);
+    for (let i = 0; i < userProfile.clubs.length; i++) {
+      if (i === userProfile.clubs.length - 1) {
+        userClubs += userProfile.clubs[i];
+      } else {
+        userClubs += `${userProfile.clubs[i]}, `;
+      }
     }
     return (
-        <Container>
+        <Container className="user-profile-background">
           <Header as="h2" textAlign="center">Your Profile</Header>
           <List>
             <List.Item><Header as="h3">First Name:</Header></List.Item>
-            <List.Item><p>{userProfile.firstName}</p></List.Item>
+            <List.Item><p className="user profile list item">{userProfile.firstName}</p></List.Item>
             <List.Item><Header as="h3">Last Name:</Header></List.Item>
-            <List.Item><p>{userProfile.lastName}</p></List.Item>
+            <List.Item><p className="user profile list item">{userProfile.lastName}</p></List.Item>
             <List.Item><Header as="h3">Interests:</Header></List.Item>
-            <List.Item><p>{userInterests}</p></List.Item>
+            <List.Item><p className="user profile list item">{userInterests}</p></List.Item>
             <List.Item><Header as="h3">Clubs:</Header></List.Item>
-            <List.Item><p>{userClubs}</p></List.Item>
-            <List.Item><Header as="h3">Image URL:</Header></List.Item>
-            <List.Item><p>{userProfile.image}</p></List.Item>
+            <List.Item><p className="user profile list item">{userClubs}</p></List.Item>
           </List>
           <Link to="/edituserprofile"><Button>Edit Profile</Button></Link>
         </Container>
