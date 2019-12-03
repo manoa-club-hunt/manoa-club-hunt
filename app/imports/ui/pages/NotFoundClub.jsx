@@ -10,7 +10,7 @@ class NotFoundClub extends React.Component {
           <Header as="h2" textAlign="center">
             <p>Club website not available</p>
           </Header>
-          <Link to={'/list'}>Return to Club Listings</Link>
+          <Link to={'/list'}><em>Return to Club Listings</em></Link>
         </Container>
     );
   }
