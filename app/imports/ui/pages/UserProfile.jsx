@@ -43,9 +43,9 @@ class UserProfile extends React.Component {
             <Card.Description>Clubs: {userClubs}</Card.Description>
           </Card.Content>
           <Card.Content>
-            <Button basic link="/edituserprofile">
-              Edit
-            </Button>
+            <Link to="/edituserprofile">
+              <Button>Edit</Button>
+            </Link>
           </Card.Content>
         </Card>
     );
