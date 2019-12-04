@@ -24,9 +24,9 @@ const fadeProperties = {
 class Landing extends React.Component {
   render() {
     const gridStyle = { height: '500px' };
-    const divStyle = { color: 'white' };
+    const divStyle = { color: 'green' };
     return (
-        <div>
+        <div className="slide-background">
           <Grid container verticalAlign="middle" style={gridStyle}>
             <Grid.Row columns="two">
               <div className="slide-container">
@@ -74,7 +74,7 @@ class Landing extends React.Component {
                   <Image src="https://www.logolynx.com/images/logolynx/81/819f03ed059e267365b9b32c4a0ca3e7.png"/>
                 </Grid.Column>
                 <Grid.Column>
-                  <Header as="h3" inverted>
+                  <Header as="h3">
                     Looking for a club? Ready to find the one for you? Like E-Harmony, we find the perfect match for
                     you. With the Manoa Club Hunt, we use a scientific algorithm to find clubs who are looking for
                     people like you. Get started today by registering for a free user profile on Manoa Club Hunt. So

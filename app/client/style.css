@@ -1,8 +1,13 @@
 .manoa-landing-background {
-  background: url(https://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/Manoa_Stream_Clean_up_2018.jpg) no-repeat center center fixed;
+  background-color: white;
   background-size: cover;
   height: 500px;
   color: white;
+}
+
+.slide-background {
+  background-color: #F5F5F5;
+  background-size: cover;
 }
 
 .slide-container {
@@ -10,7 +15,8 @@
   margin: auto; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+}
 
 .each-slide > div {
   display: flex;
@@ -46,24 +52,5 @@ h3 {
   justify-content: center;
   align-items: center;
   margin: 0;
-  background: #024731;
+  background: #F5F5F5;
 }
-
-.userprofile.card.header {
-  font-size: 250% !important;
-}
-
-.userprofile.card.content {
-  font-size: 150% !important;
-}
-
-.userprofile.card {
-  width: 60% !important;
-}
-
-.userprofile.card.content.header {
-  font-weight: bold !important;
-  font-style: italic !important;
-  font-size: 100% !important;
-}
-
