@@ -42,25 +42,33 @@ class UserProfile extends React.Component {
           </Card.Content>
           <Card.Content>
             <Card.Description className="userprofile card content">
-              First Name:
+              <div className="userprofile card content header">
+                First Name:
+              </div>
               <br/>
               {userProfile.firstName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
-              Last Name:
+              <div className="userprofile card content header">
+                Last Name:
+              </div>
               <br/>
               {userProfile.lastName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
-              Interests:
+              <div className="userprofile card content header">
+                Interests:
+              </div>
               <br/>
               {userInterests}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
-              Clubs:
+              <div className="userprofile card content header">
+                Clubs:
+              </div>
               <br/>
               {userClubs}
             </Card.Description>
