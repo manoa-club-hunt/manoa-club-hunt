@@ -28,7 +28,7 @@ class clubPage extends React.Component {
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
           </div>
-          <Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>
+          <button className="ui button"><Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link></button>
           <hr/>
         </Container>
     );
