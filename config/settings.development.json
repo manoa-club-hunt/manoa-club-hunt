@@ -12,6 +12,13 @@
       "password": "changeme",
       "firstName": "john",
       "lastName": "foo"
+    },
+    {
+      "email": "officer@foo.com",
+      "password": "changeme",
+      "role": "officer",
+      "firstName": "officer",
+      "lastName": "foo"
     }
   ],
   "defaultUserProfiles": [

@@ -4,6 +4,7 @@ import { Container, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { Roles } from 'meteor/alanning:roles';
 import { Clubs } from '../../api/club/Club';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
@@ -28,7 +29,9 @@ class clubPage extends React.Component {
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
           </div>
-          <Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>
+          {Roles.userIsInRole(Meteor.userId(), 'officer') || Roles.userIsInRole(Meteor.userId(), 'admin') ?
+              (<Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link>) : ''
+          }
           <hr/>
         </Container>
     );
