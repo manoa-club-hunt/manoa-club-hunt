@@ -21,5 +21,8 @@ Meteor.publish('StuffAdmin', function publish() {
 });
 
 Meteor.publish('Clubs', function publish() {
-  return Clubs.find();
+  if (this.userId) {
+    return Clubs.find();
+  }
+  return this.ready();
 });
