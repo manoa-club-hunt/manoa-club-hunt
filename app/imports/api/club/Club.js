@@ -10,6 +10,8 @@ const Clubs = new Mongo.Collection(clubsName);
 const ClubSchema = new SimpleSchema({
   clubName: String,
   interests: Array,
+  officers: { type: Array, optional: true },
+  'officers.$': String,
   'interests.$': String,
   contact: String,
   website: { type: String, defaultValue: '' },
