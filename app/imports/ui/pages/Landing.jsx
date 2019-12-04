@@ -13,7 +13,7 @@ const fadeImages = [
 const fadeProperties = {
   duration: 5000,
   transitionDuration: 500,
-  infinite: false,
+  infinite: true,
   indicators: true,
   onChange: (oldIndex, newIndex) => {
     console.log(`fade transition from ${oldIndex} to ${newIndex}`);
@@ -26,47 +26,41 @@ class Landing extends React.Component {
     const gridStyle = { height: '500px' };
     const divStyle = { color: 'green' };
     return (
-        <div className="slide-background">
-          <Grid container verticalAlign="middle" style={gridStyle}>
-            <Grid.Row columns="two">
-              <div className="slide-container">
-                <Fade {...fadeProperties}>
-                  <div className="each-fade">
-                    <div className="image-container">
-                      <img src={fadeImages[0]}/>
-                    </div>
-                    <h2 style={divStyle}>Japanese
-                      Cultural Club
-                    </h2>
-                  </div>
-                  <div className="each-fade">
-                    <div className="image-container">
-                      <img src={fadeImages[1]}/>
-                    </div>
-                    <h2 style={divStyle}>Judo Club</h2>
-                  </div>
-                  <div className="each-fade">
-                    <div className="image-container">
-                      <img src={fadeImages[2]}/>
-                    </div>
-                    <h2 style={divStyle}>Pre-Vet Club</h2>
-                  </div>
-                  <div className="each-fade">
-                    <div className="image-container">
-                      <img src={fadeImages[3]}/>
-                    </div>
-                    <h2 style={divStyle}>Rotaract Club</h2>
-                  </div>
-                  <div className="each-fade">
-                    <div className="image-container">
-                      <img src={fadeImages[4]}/>
-                    </div>
-                    <h2 style={divStyle}>Chemistry Club</h2>
-                  </div>
-                </Fade>
+        <div>
+          <div className="slide-container">
+            <Fade {...fadeProperties}>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages[0]} />
+                </div>
+                <h2>Japanese Cultural Club</h2>
               </div>
-            </Grid.Row>
-          </Grid>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages[1]} />
+                </div>
+                <h2>Judo Club</h2>
+              </div>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages[2]} />
+                </div>
+                <h2>Pre-Vet Club</h2>
+              </div>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages[3]} />
+                </div>
+                <h2>Rotaract Club</h2>
+              </div>
+              <div className="each-fade">
+                <div className="image-container">
+                  <img src={fadeImages[4]} />
+                </div>
+                <h2>Chemistry Club</h2>
+              </div>
+            </Fade>
+          </div>
           <div className="manoa-landing-background">
             <Grid container verticalAlign="middle" style={gridStyle}>
               <Grid.Row columns="two">
