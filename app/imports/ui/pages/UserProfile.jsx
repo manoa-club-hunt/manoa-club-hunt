@@ -32,6 +32,12 @@ class UserProfile extends React.Component {
         userClubs += `${userProfile.clubs[i]}, `;
       }
     }
+    if (userClubs === '') {
+      userClubs += 'No clubs listed.';
+    }
+    if (userInterests === '') {
+      userInterests += 'No interests listed.';
+    }
     return (
         <Card centered className="userprofile card">
           <Card.Content>
