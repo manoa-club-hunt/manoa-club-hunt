@@ -2,6 +2,7 @@
   {
     "clubName": "Academy for Creative Media Student Association",
     "interests": ["Academic", "Professional"],
+    "officers": ["officer@foo.com"],
     "contact": "Emma Daily",
     "website": "",
     "email": "edaily@hawaii.edu"
