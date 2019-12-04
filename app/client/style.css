@@ -48,3 +48,22 @@ h3 {
   margin: 0;
   background: #024731;
 }
+
+.userprofile.card.header {
+  font-size: 250% !important;
+}
+
+.userprofile.card.content {
+  font-size: 150% !important;
+}
+
+.userprofile.card {
+  width: 60% !important;
+}
+
+.userprofile.card.content.header {
+  font-weight: bold !important;
+  font-style: italic !important;
+  font-size: 100% !important;
+}
+
