@@ -33,18 +33,41 @@ class UserProfile extends React.Component {
       }
     }
     return (
-        <Card centered>
+        <Card centered className="userprofile card">
           <Card.Content>
-            <Image floated="right" size="tiny" src={userProfile.picture}/>
-            <Card.Header>{userProfile.firstName} {userProfile.lastName}&apos;s Profile</Card.Header>
+            <Card.Header className="userprofile card header">
+              {userProfile.firstName} {userProfile.lastName}&apos;s Profile
+            </Card.Header>
+            <Image floated="right" size="small" src={userProfile.picture}/>
           </Card.Content>
           <Card.Content>
-            <Card.Description>Interests: {userInterests}</Card.Description>
-            <Card.Description>Clubs: {userClubs}</Card.Description>
+            <Card.Description className="userprofile card content">
+              First Name:
+              <br/>
+              {userProfile.firstName}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              Last Name:
+              <br/>
+              {userProfile.lastName}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              Interests:
+              <br/>
+              {userInterests}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              Clubs:
+              <br/>
+              {userClubs}
+            </Card.Description>
           </Card.Content>
           <Card.Content>
             <Link to="/edituserprofile">
-              <Button>Edit</Button>
+              <Button size="big">Edit</Button>
             </Link>
           </Card.Content>
         </Card>

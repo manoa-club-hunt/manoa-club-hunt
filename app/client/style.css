@@ -16,3 +16,14 @@
   width: 1100px;
 }
 
+.userprofile.card.header {
+  font-size: 250% !important;
+}
+
+.userprofile.card.content {
+  font-size: 150% !important;
+}
+
+.userprofile.card {
+  width: 60% !important;
+}
