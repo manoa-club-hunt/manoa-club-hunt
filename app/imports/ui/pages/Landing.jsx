@@ -1,6 +1,10 @@
 import React from 'react';
 import { Image, Grid, Header } from 'semantic-ui-react';
 import { Fade } from 'react-slideshow-image';
+import { withTracker } from 'meteor/react-meteor-data';
+import { Meteor } from 'meteor/meteor';
+import UserHome from '../components/UserHome';
+import PropTypes from 'prop-types';
 
 const fadeImages = [
   'images/japcultureClub.jpg',
@@ -31,31 +35,31 @@ class Landing extends React.Component {
             <Fade {...fadeProperties}>
               <div className="each-fade">
                 <div className="image-container">
-                  <img src={fadeImages[0]} />
+                  <img src={fadeImages[0]}/>
                 </div>
                 <h2>Japanese Cultural Club</h2>
               </div>
               <div className="each-fade">
                 <div className="image-container">
-                  <img src={fadeImages[1]} />
+                  <img src={fadeImages[1]}/>
                 </div>
                 <h2>Judo Club</h2>
               </div>
               <div className="each-fade">
                 <div className="image-container">
-                  <img src={fadeImages[2]} />
+                  <img src={fadeImages[2]}/>
                 </div>
                 <h2>Pre-Vet Club</h2>
               </div>
               <div className="each-fade">
                 <div className="image-container">
-                  <img src={fadeImages[3]} />
+                  <img src={fadeImages[3]}/>
                 </div>
                 <h2>Rotaract Club</h2>
               </div>
               <div className="each-fade">
                 <div className="image-container">
-                  <img src={fadeImages[4]} />
+                  <img src={fadeImages[4]}/>
                 </div>
                 <h2>Chemistry Club</h2>
               </div>
@@ -78,9 +82,26 @@ class Landing extends React.Component {
               </Grid.Row>
             </Grid>
           </div>
+          {this.props.currentUser ?
+              (
+                  <div>
+                    <hr/>
+                    <br/>
+                    <UserHome/>
+                  </div>
+              ) : ''
+          }
         </div>
     );
   }
 }
 
-export default Landing;
+Landing.propTypes = {
+  currentUser: PropTypes.string,
+};
+
+export default withTracker(() => (
+    {
+      currentUser: Meteor.user() ? Meteor.user().username : '',
+    }
+))(Landing);
