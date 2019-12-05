@@ -1,6 +1,5 @@
 import React from 'react';
-import { Clubs } from '/imports/api/club/Club';
-import { Grid, Segment, Header } from 'semantic-ui-react';
+import { Grid, Segment, Header, Loader } from 'semantic-ui-react';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import ListField from 'uniforms-semantic/ListField';
@@ -12,6 +11,7 @@ import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
+import { Clubs } from '../../api/club/Club';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
@@ -36,8 +36,14 @@ class EditClubProfile extends React.Component {
             swal('Success', 'Item updated successfully', 'success')));
   }
 
-  /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
+  /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
+  }
+
+
+  /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
+  renderPage() {
     return (
         <Grid container centered>
           <Grid.Column>
@@ -64,7 +70,6 @@ class EditClubProfile extends React.Component {
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditClubProfile.propTypes = {
   doc: PropTypes.object,
-  model: PropTypes.object,
   ready: PropTypes.bool.isRequired,
 };
 
