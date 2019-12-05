@@ -3,8 +3,8 @@ import { Image, Grid, Header } from 'semantic-ui-react';
 import { Fade } from 'react-slideshow-image';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
-import UserHome from '../components/UserHome';
 import PropTypes from 'prop-types';
+import UserHome from '../components/UserHome';
 
 const fadeImages = [
   'images/japcultureClub.jpg',
@@ -88,6 +88,7 @@ class Landing extends React.Component {
                     <hr/>
                     <br/>
                     <UserHome/>
+                    <br/>
                   </div>
               ) : ''
           }

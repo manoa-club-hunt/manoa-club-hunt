@@ -48,6 +48,19 @@
         "Academy for Creative Media Student Association"
       ],
       "picture": ""
+    },
+    {
+      "email": "officer@foo.com",
+      "firstName": "officer",
+      "lastName": "foo",
+      "interests": [
+        "Academic",
+        "Professional"
+      ],
+      "clubs": [
+        "Academy for Creative Media Student Association"
+      ],
+      "picture": ""
     }
   ]
 }
