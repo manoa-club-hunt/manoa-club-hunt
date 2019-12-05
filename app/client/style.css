@@ -13,6 +13,24 @@ h3 {
   text-align: center;
 }
 
+.userprofile.card.header {
+  font-size: 250% !important;
+}
+
+.userprofile.card.content {
+  font-size: 150% !important;
+}
+
+.userprofile.card {
+  width: 60% !important;
+}
+
+.userprofile.card.content.header {
+  font-size: 100% !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
 .each-slide > div {
   display: flex;
   align-items: center;
