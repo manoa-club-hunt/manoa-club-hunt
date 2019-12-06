@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -10,19 +10,17 @@ class Club extends React.Component {
     if (clubsite === '') {
       clubsite = '/#/notfoundclub';
     }
-  return (
-        <Card centered>
-          <Card.Content textAlign="center" header={this.props.club.clubName} />
-          <Card.Content textAlign="center">
-            <em>
-              <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
-            </em>
+    return (
+        <Card centered className="clubcard">
+          <Card.Content textAlign="center" header={this.props.club.clubName}/>
+          <Card.Content extra>
+              <Button centered>
+                <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
+              </Button>
+              <Button centered>
+                <a href={clubsite}>View Website</a>
+              </Button>
           </Card.Content>
-          <Card.Description textAlign="center">
-            <em>
-              <a href={clubsite}>Go to Website</a>
-            </em>
-          </Card.Description>
         </Card>
     );
   }

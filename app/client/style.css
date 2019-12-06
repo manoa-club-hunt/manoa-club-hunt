@@ -67,3 +67,14 @@ h3 {
   margin: 0;
   background: white;
 }
+
+.ui.centered.clubcard.card .button {
+  width: 60px;
+  text-align: center;
+  font-size: xx-small;
+
+}
+
+.ui.centered.clubcard.card {
+  font-size: x-small;
+}
