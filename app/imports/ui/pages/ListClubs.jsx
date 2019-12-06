@@ -48,7 +48,7 @@ class ListClubs extends React.Component {
               options={interestOptions}
           />
           <br/>
-          <Card.Group centered itemsPerRow={7}>
+          <Card.Group centered itemsPerRow={8}>
             {ClubList.map((club, index) => <Club key={index} club={club}/>)}
           </Card.Group>
         </Container>

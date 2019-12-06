@@ -13,11 +13,11 @@ class Club extends React.Component {
     return (
         <Card centered className="clubcard">
           <Card.Content textAlign="center" header={this.props.club.clubName}/>
-          <Card.Content extra>
-              <Button centered>
+          <Card.Content extra className="cardButtonExtra">
+              <Button compact>
                 <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
               </Button>
-              <Button centered>
+              <Button compact>
                 <a href={clubsite}>View Website</a>
               </Button>
           </Card.Content>
