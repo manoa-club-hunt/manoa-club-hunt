@@ -28,9 +28,15 @@ class UserHome extends React.Component {
       });
     });
     const sortedClubs = userClubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
+    let hasClubs = true;
+    if (userClubs.length === 0) {
+      hasClubs = false;
+    }
+    console.log(userClubs);
     return (
         <Container>
-          {sortedClubs === [] ?
+          {
+            hasClubs ?
               (<Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>) : (
                   <div>
                     <Header as="h2" textAlign="center">
