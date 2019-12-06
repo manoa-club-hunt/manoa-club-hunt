@@ -31,47 +31,41 @@ class Landing extends React.Component {
     const divStyle = { color: 'green' };
     return (
         <div>
-          <div className="slide-container">
-            <Fade {...fadeProperties}>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages[0]}/>
-                </div>
-                <h2>Japanese Cultural Club</h2>
-              </div>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages[1]}/>
-                </div>
-                <h2>Judo Club</h2>
-              </div>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages[2]}/>
-                </div>
-                <h2>Pre-Vet Club</h2>
-              </div>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages[3]}/>
-                </div>
-                <h2>Rotaract Club</h2>
-              </div>
-              <div className="each-fade">
-                <div className="image-container">
-                  <img src={fadeImages[4]}/>
-                </div>
-                <h2>Chemistry Club</h2>
-              </div>
-            </Fade>
-          </div>
           <div className="manoa-landing-background">
             <Grid container verticalAlign="middle" style={gridStyle}>
               <Grid.Row columns="two">
-                <Grid.Column>
-                  <Image src="https://www.logolynx.com/images/logolynx/81/819f03ed059e267365b9b32c4a0ca3e7.png"/>
+                <Grid.Column width={10}>
+                  <div className="slide-container">
+                    <Fade {...fadeProperties}>
+                      <div className="each-fade">
+                        <div className="image-container">
+                          <img src={fadeImages[0]}/>
+                        </div>
+                      </div>
+                      <div className="each-fade">
+                        <div className="image-container">
+                          <img src={fadeImages[1]}/>
+                        </div>
+                      </div>
+                      <div className="each-fade">
+                        <div className="image-container">
+                          <img src={fadeImages[2]}/>
+                        </div>
+                      </div>
+                      <div className="each-fade">
+                        <div className="image-container">
+                          <img src={fadeImages[3]}/>
+                        </div>
+                      </div>
+                      <div className="each-fade">
+                        <div className="image-container">
+                          <img src={fadeImages[4]}/>
+                        </div>
+                      </div>
+                    </Fade>
+                  </div>
                 </Grid.Column>
-                <Grid.Column>
+                <Grid.Column width={6}>
                   <Header as="h3">
                     Looking for a club? Ready to find the one for you? Like E-Harmony, we find the perfect match for
                     you. With the Manoa Club Hunt, we use a scientific algorithm to find clubs who are looking for

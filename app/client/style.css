@@ -2,11 +2,11 @@
   background-color: white;
   background-size: cover;
   height: 500px;
-  color: white;
+  color: gray;
 }
 
 .slide-container {
-  width: 70%;
+  width: 500px;
   margin: auto; }
 
 h3 {
@@ -51,7 +51,7 @@ h3 {
 }
 
 .each-fade .image-container {
-  width: 75%;
+  width: 100%;
   overflow: hidden;
 }
 
