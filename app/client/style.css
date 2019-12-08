@@ -1,17 +1,88 @@
 .manoa-landing-background {
-  background: url(https://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/Manoa_Stream_Clean_up_2018.jpg) no-repeat center center fixed;
+  background-color: white;
   background-size: cover;
   height: 500px;
-  color: white;
+  color: gray;
 }
 
-.footer-background {
-  background-color: white;
+.slide-container {
+  width: 500px;
+  margin: auto; }
+
+h3 {
+  text-align: center;
+}
+
+.userprofile.card.header {
+  font-size: 250% !important;
+}
+
+.userprofile.card.content {
+  font-size: 150% !important;
+}
+
+.userprofile.card {
+  width: 60% !important;
+}
+
+.userprofile.card.content.header {
+  font-size: 100% !important;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
   height: 200px;
-  padding-top: 20px;
-  padding-bot: 20px;
 }
 
-.ui.cards {
-  width: 1100px;
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: white;
+}
+
+ui.button:disabled {
+  opacity: 0.45 !important;
+}
+
+.ui.centered.clubcard.card .button {
+  width: 60px;
+  text-align: center;
+  font-size: xx-small;
+}
+
+.ui.centered.clubcard.card {
+  font-size: x-small;
+}
+
+.cardButtonExtra {
+  justify-content: center;
+  display: flex;
 }

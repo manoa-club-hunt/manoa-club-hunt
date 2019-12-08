@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Loader, Container, List, Button } from 'semantic-ui-react';
+import { Card, Loader, Button, Image } from 'semantic-ui-react';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -16,23 +16,75 @@ class UserProfile extends React.Component {
   renderPage() {
     const email = Meteor.user().username;
     const userProfile = UserProfiles.findOne({ email });
+    let userInterests = '';
+    let userClubs = '';
+    for (let i = 0; i < userProfile.interests.length; i++) {
+      if (i === userProfile.interests.length - 1) {
+        userInterests += userProfile.interests[i];
+      } else {
+        userInterests += `${userProfile.interests[i]}, `;
+      }
+    }
+    for (let i = 0; i < userProfile.clubs.length; i++) {
+      if (i === userProfile.clubs.length - 1) {
+        userClubs += userProfile.clubs[i];
+      } else {
+        userClubs += `${userProfile.clubs[i]}, `;
+      }
+    }
+    if (userClubs === '') {
+      userClubs += 'No clubs listed.';
+    }
+    if (userInterests === '') {
+      userInterests += 'No interests listed.';
+    }
     return (
-        <Container>
-          <Header as="h2" textAlign="center">Your Profile</Header>
-          <List>
-            <List.Item><Header as="h3">First Name:</Header></List.Item>
-            <List.Item><p>{userProfile.firstName}</p></List.Item>
-            <List.Item><Header as="h3">Last Name:</Header></List.Item>
-            <List.Item><p>{userProfile.lastName}</p></List.Item>
-            <List.Item><Header as="h3">Interests:</Header></List.Item>
-            <List.Item><p>{userProfile.interests.reduce((memo, interest) => `${memo}, ${interest}`)}</p></List.Item>
-            <List.Item><Header as="h3">Clubs:</Header></List.Item>
-            <List.Item><p>{userProfile.clubs.reduce((memo, interest) => `${memo}, ${interest}`)}</p></List.Item>
-            <List.Item><Header as="h3">Image URL:</Header></List.Item>
-            <List.Item><p>{userProfile.image}</p></List.Item>
-          </List>
-          <Link to="/edituserprofile"><Button>Edit Profile</Button></Link>
-        </Container>
+        <Card centered className="userprofile card">
+          <Card.Content>
+            <Card.Header className="userprofile card header">
+              {userProfile.firstName} {userProfile.lastName}&apos;s Profile
+            </Card.Header>
+            <Image floated="right" size="small" src={userProfile.picture}/>
+          </Card.Content>
+          <Card.Content>
+            <Card.Description className="userprofile card content">
+              <div className="userprofile card content header">
+                First Name:
+              </div>
+              <br/>
+              {userProfile.firstName}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              <div className="userprofile card content header">
+                Last Name:
+              </div>
+              <br/>
+              {userProfile.lastName}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              <div className="userprofile card content header">
+                Interests:
+              </div>
+              <br/>
+              {userInterests}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              <div className="userprofile card content header">
+                Clubs:
+              </div>
+              <br/>
+              {userClubs}
+            </Card.Description>
+          </Card.Content>
+          <Card.Content>
+            <Link to="/edituserprofile">
+              <Button size="big">Edit</Button>
+            </Link>
+          </Card.Content>
+        </Card>
     );
   }
 }
