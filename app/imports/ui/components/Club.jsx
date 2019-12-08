@@ -18,8 +18,8 @@ class Club extends React.Component {
     return (
         <Card centered className="clubcard">
           <Card.Content textAlign="center">
-            <Image src={this.props.club.image} centered size="tiny" />
-            <hr/>
+            <Image src={this.props.club.image} centered size="tiny"/>
+            <hr />
             <Card.Header>{this.props.club.clubName}</Card.Header>
           </Card.Content>
           <Card.Content extra className="cardButtonExtra">

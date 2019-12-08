@@ -68,10 +68,6 @@ h3 {
   background: white;
 }
 
-ui.tiny.image {
-  height: 20px;
-}
-
 ui.button:disabled {
   opacity: 0.45 !important;
 }
