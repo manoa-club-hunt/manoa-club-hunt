@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'semantic-ui-react';
+import { Card, Button, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -9,6 +9,7 @@ class Club extends React.Component {
   render() {
     let disable = true;
     const clubsite = this.props.club.website;
+    const clubimage = this.props.club.image;
     if (clubsite === '') {
       disable = true;
     } else {
@@ -18,6 +19,7 @@ class Club extends React.Component {
     return (
         <Card centered className="clubcard">
           <Card.Content textAlign="center" header={this.props.club.clubName}/>
+          <Image src= {this.props.club.image}  fluid/>
           <Card.Content extra className="cardButtonExtra">
               <Button compact>
                 <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>

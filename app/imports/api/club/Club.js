@@ -16,6 +16,7 @@ const ClubSchema = new SimpleSchema({
   contact: String,
   website: { type: String, defaultValue: '' },
   email: { type: String, defaultValue: '' },
+  image: { type: String, defaultValue: '' },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */
