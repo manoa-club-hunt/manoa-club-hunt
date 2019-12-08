@@ -30,10 +30,14 @@ class UserHome extends React.Component {
     const sortedClubs = userClubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
     return (
         <Container>
+          <Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>
+          <hr />
           {sortedClubs === [] ?
-              (<Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>) : (
+              (<Card.Group centered itemsPerRow={8}>
+                {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
+              </Card.Group>) : (
                   <div>
-                    <Header as="h2" textAlign="center">
+                    <Header as="h3" textAlign="center">
                       No Interests Listed.
                     </Header>
                     <Header as="h3" textAlign="center">
@@ -41,9 +45,6 @@ class UserHome extends React.Component {
                     </Header>
                   </div>)
           }
-          <Card.Group centered itemsPerRow={4}>
-            {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
-          </Card.Group>
         </Container>
     );
   }
