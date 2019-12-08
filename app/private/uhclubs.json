@@ -1,1649 +1,2530 @@
 [
   {
     "clubName": "Academy for Creative Media Student Association",
-    "interests": ["Academic", "Professional"],
-    "officers": ["officer@foo.com"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
+    "officers": [
+      "officer@foo.com"
+    ],
     "contact": "Emma Daily",
     "website": "",
-    "email": "edaily@hawaii.edu"
+    "email": "edaily@hawaii.edu",
+    "image": "https://f113fc96-a-a308b7b9-s-sites.googlegroups.com/a/hawaii.edu/acmsa/home/acmsalogo.jpg?attachauth=ANoY7cose-NGYYKJ3io1VZ90HNlcpYmJyVsKjx9N5CyWIbNPvA-wkKa4d7CdBw86WSS-W2BfD1UOsSxqqXB_-KeUt00esZsgCiB3JeguIVhTWUYUJqIveKnFIFztUTW2ksjmzjESJ4HrLB6x7APzNra8G0RdYT2mHxrI92dw37klAtz_ShDpW52-XScTQSpEeKPu2D2lLk2aIjrPtQaRgOSj1ZrawwEyVQ%3D%3D&attredirects=0"
   },
   {
     "clubName": "Accounting Club at UH Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Chelsi Morishige",
     "website": "https://acuhmanoa.com",
-    "email": "chelsicm@hawaii.edu"
+    "email": "chelsicm@hawaii.edu",
+    "image": "https://acuhmanoa.com/wp-content/uploads/2018/09/New-AC-Logo.png"
   },
   {
     "clubName": "Adventist Christian Fellowship",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Victor Kolonzo",
     "website": "",
-    "email": "vkilonzo@hawaii.edu"
+    "email": "vkilonzo@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh1hK0AFomZyKMMOX5njcUR_0D8Td7XnygXz5vhmrLEt-FHa5q"
   },
   {
     "clubName": "Advocates for Public Interest Law",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Rebekah Ray",
     "website": "",
-    "email": "rray2@hawaii.edu"
+    "email": "rray2@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ8QJ3s5ySa3wzIhnlksFDGCQ1djrBfHqtOmdytkYOgW0QuMkj2"
   },
   {
     "clubName": "AAUW-UHM",
     "interests": "Political",
     "contact": "Ronja Steinbach",
-    "website": "",
-    "email": "ronja36@hawaii.edu"
+    "website": "https://honolulu-hi.aauw.net/",
+    "email": "ronja36@hawaii.edu",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/American_Association_of_University_Women_logo.svg/2000px-American_Association_of_University_Women_logo.svg.png"
   },
   {
     "clubName": "AECT-Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Waynele Yu",
     "website": "https://bit.ly/aect-hi",
-    "email": "waynele@hawaii.edu"
+    "email": "waynele@hawaii.edu",
+    "image": "https://sites.google.com/site/aecthawaii/_/rsrc/1468736472473/home/AECT-HI%20short%20logo.png?height=156&width=320"
   },
   {
     "clubName": "Aikido @ UHM",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Timothy Halliday",
     "website": "",
-    "email": "halliday@hawaii.edu"
+    "email": "halliday@hawaii.edu",
+    "image": "https://www.aikidohawaii.org/images/a_hi_logo.gif"
   },
   {
     "clubName": "Alpha Gamma Delta, Delta Sigma Chapter",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Emma Archambeau",
     "website": "https://hawaii.alphagammadelta.org",
-    "email": "earchamb@hawaii.edu"
+    "email": "earchamb@hawaii.edu",
+    "image": "http://hawaii.alphagammadelta.org/r/images/agd-logo.png"
   },
   {
     "clubName": "Alpha Sigma Phi",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Abel Salinas",
     "website": "",
-    "email": "abels@hawaii.edu"
+    "email": "abels@hawaii.edu",
+    "image": "http://alphasigmaphi.org/Websites/alphasigmaphihq/images/Hawai'i.png"
   },
   {
     "clubName": "AlohaNation Flowarts",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Nathan Onaka",
     "website": "https://anfclub.github.io/AlohaNation-Flowarts",
-    "email": "onankan@hawaii.edu"
+    "email": "onankan@hawaii.edu",
+    "image": "https://anfclub.github.io/AlohaNation-Flowarts/IMG_5972.JPG"
   },
   {
     "clubName": "AMA,HMA Student Chapter at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jester Galiza",
     "website": "",
-    "email": "jpgaliza@hawaii.edu"
+    "email": "jpgaliza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "American Cetacean Society Student Coalition at UH at Manoa",
     "interests": "Service",
     "contact": "Opal Stanfield",
     "website": "",
-    "email": "opalstan@hawaii.edu"
+    "email": "opalstan@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "American Indian Science and Engineering Society",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kathleen Kodama",
     "website": "https://aiseshawaii.weebly.com",
-    "email": "kmmk4@hawaii.edu"
+    "email": "kmmk4@hawaii.edu",
+    "image": "http://aiseshawaii.weebly.com/uploads/3/9/3/6/39362525/copy-of-aises-logo-1_orig.png"
   },
   {
     "clubName": "American Institute of Architecture Students",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Celeste Guarin",
     "website": "https://aiashawaii.com",
-    "email": "cguarin@hawaii.edu"
+    "email": "cguarin@hawaii.edu",
+    "image": "https://images.squarespace-cdn.com/content/57e48324579fb35bcfcd4bd6/1564879527999-KJRJE2DJIJC8SDNZOYPM/aias+w+white.png?format=1500w&content-type=image%2Fpng"
   },
   {
     "clubName": "American Library Association Student Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Katie Joe Lang",
     "website": "",
-    "email": "langk@hawaii.edu"
+    "email": "langk@hawaii.edu",
+    "image": "https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/11392956_1007348762639187_1121574557522913058_n.png?_nc_cat=103&_nc_ohc=evGuFtRhvdsAQmWCCXsrUuhGRMY2YL-JkpGnhvQQAJ-xy5iAnV_fEMiKQ&_nc_ht=scontent-lax3-1.xx&oh=ec7c681d57665dcb0b7363b0583a2f65&oe=5E499B14"
   },
   {
     "clubName": "American Marketing Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Ashley Regaspi",
     "website": "https://amauhm.org",
-    "email": "aregaspi@hawaii.edu"
+    "email": "aregaspi@hawaii.edu",
+    "image": "https://pbs.twimg.com/profile_images/948812519526682624/90f0pMro_400x400.jpg"
   },
   {
     "clubName": "American Meterological Society Aloha Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Terrence John Corrigan",
     "website": "https://amsalohachapter.wixsite.com/aloha",
-    "email": "tjc21@hawaii.edu"
+    "email": "tjc21@hawaii.edu",
+    "image": "https://static.wixstatic.com/media/9b46b8_1ac602ec10584d43a5e2b66624577dce~mv2.png/v1/fill/w_76,h_75,al_c,q_80,usm_0.66_1.00_0.01/AlohaLogo.webp"
   },
   {
     "clubName": "American Society of Civil Engineers",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Maynard Lazo",
     "website": "",
-    "email": "lazom@hawaii.edu"
+    "email": "lazom@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "American Society of Mechanical Enginers",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Daryll Suyat",
     "website": "",
-    "email": "suyatd@hawaii.edu"
+    "email": "suyatd@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3L1lX2nUM_VdJJ6OoMBYmXzPu7mvMjWxXJKC6lgHHrPrKiAtJxg&s"
   },
   {
     "clubName": "American Society for Microbiology Hawaii Student Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Albert To",
     "website": "https://www.asmbranches.org/brhawaii/",
-    "email": "albertto@hawaii.edu"
+    "email": "albertto@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Anesthesiology Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nicholas Fancher",
     "website": "https://sites.google.com/view/jabsomaig",
-    "email": "nfancher@hawaii.edu"
+    "email": "nfancher@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Animal Science Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Cody Ching",
     "website": "",
-    "email": "codylc@hawaii.edu"
+    "email": "codylc@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Anthropology Undergraduate Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jitrudi Scheiman",
     "website": "",
-    "email": "jms26@hawaii.edu"
+    "email": "jms26@hawaii.edu",
+    "image": "https://xdj1sd684n-flywheel.netdna-ssl.com/wp-content/uploads/2019/07/ausa-2.png"
   },
   {
     "clubName": "Artists and Musicians at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Associated Students at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jester Galiza",
     "website": "",
-    "email": "jpgaliza@hawaii.edu"
+    "email": "jpgaliza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Association For Computing Machinery at Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Marty Joshua Apilado",
     "website": "https://acmanoa.github.io",
-    "email": "mjka@hawaii.edu"
+    "email": "mjka@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkw_h3LnCHgaNUGnbgWq6OOaOKCf2q4adiwA03RrL6qRBEkL1I"
   },
   {
     "clubName": "Atherton YMCA",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Christina Andres",
     "website": "https://athertonymca.org",
-    "email": "andrescc@hawaii.edu"
+    "email": "andrescc@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Athletic Training Student Society",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kumiko Hashida",
     "website": "",
-    "email": "hashidak@hawaii.edu"
+    "email": "hashidak@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Autonomous Control Theory-Unmanned Aerial Systems",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Evan Kawamura",
     "website": "https://manoa.hawaii.edu/actuas",
-    "email": "evankawa@hawaii.edu"
+    "email": "evankawa@hawaii.edu",
+    "image": "http://manoa.hawaii.edu/actuas/wp-content/uploads/2018/05/image-300x140.png"
   },
   {
     "clubName": "Bachelor of Social Work Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kelsey Mills",
     "website": "",
-    "email": "kelseyjp@hawaii.edu"
+    "email": "kelseyjp@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Baha'i Association at UH Manoa",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Dale Spenner",
     "website": "",
-    "email": "spenner@hawaii.edu"
+    "email": "spenner@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Baptist College Ministries",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Nathaniel Atwell",
     "website": "https://www.bcmoahu.org",
-    "email": "natwell@hawaii.edu"
+    "email": "natwell@hawaii.edu",
+    "image": "https://images.squarespace-cdn.com/content/58814db51e5b6c1419a11dd7/1484870245373-GCP33IWNADQJ51CTO1LN/Main+Logo+-+Islands+only+copy.png?content-type=image%2Fpng"
   },
   {
     "clubName": "Belly Dance Raqs- Manoa",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Brittany Castle",
     "website": "",
-    "email": "bcastle9@hawaii.edu"
+    "email": "bcastle9@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Best Buddies Hawaii-UH Manoa,SAAC Chapter",
     "interests": "Service",
     "contact": "Rhonda S. Black",
     "website": "https://www.bestbuddies.org/find-programs/hawaii",
-    "email": "rblack@hawaii.edu"
+    "email": "rblack@hawaii.edu",
+    "image": "https://media.licdn.com/dms/image/C4D0BAQELoA0oi0oCWQ/company-logo_200_200/0?e=2159024400&v=beta&t=DyNE5Da_KBJaBSfG4E3ZowZ7SzzfY5HC19E868Aoeyw"
   },
   {
     "clubName": "Beta Alpha Psi, Delta Theta Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Janae Stilwell",
     "website": "https://www.bapuhm.org",
-    "email": "janaeeps@hawaii.edu"
+    "email": "janaeeps@hawaii.edu",
+    "image": "http://www.bapuhm.org/uploads/1/2/1/2/121255561/bap-publicity-logo-1-2_orig.png"
   },
   {
     "clubName": "Beta Beta Gamma Sorority",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Moana Nomura",
     "website": "https://betabetagamma.weebly.com",
-    "email": "nomura76@hawaii.edu"
+    "email": "nomura76@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Black Law Students Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Britagne Johnson",
     "website": "",
-    "email": "bnjohnso@hawaii.edu"
+    "email": "bnjohnso@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Blue Zones Project",
     "interests": "Service",
     "contact": "Robert Nieto",
     "website": "",
-    "email": "robertfn@hawaii.edu"
+    "email": "robertfn@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Botanical Society of America Hawaii Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Christian Streit",
     "website": "https://www.botany.org",
-    "email": "cstreit@hawaii.edu"
+    "email": "cstreit@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Buddhi Yoga Manoa",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Veronica Gibson",
     "website": "",
-    "email": "vgibson@hawaii.edu"
+    "email": "vgibson@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Business Executive Society of Tomorrow",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kristyn Fujii",
     "website": "https://bestuhm.org",
-    "email": "fujiik7@hawaii.edu"
+    "email": "fujiik7@hawaii.edu",
+    "image": "https://images.squarespace-cdn.com/content/5d37c623ac033d0001fd45d5/1566024774819-Q36SZB9DOXZ17LRU43UE/bestlogo.png?format=750w&content-type=image%2Fpng"
   },
   {
     "clubName": "Campus Drummers",
-    "interests": ["Leisure", "Recreational"],
+    "interests": [
+      "Leisure",
+      "Recreational"
+    ],
     "contact": "Susan Jacob",
     "website": "",
-    "email": "sjacob77@hawaii.edu"
+    "email": "sjacob77@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Cannabis Club",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Damon Grayson",
     "website": "",
-    "email": "dgrayson@hawaii.edu"
+    "email": "dgrayson@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_zkN5g_Ee6USyQJvBkaTv2lLPkMd-m9TUD0hc4MnoBN5qQ8lW"
   },
   {
     "clubName": "Capoeira Senzala",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Rachel Mamiya Hernandez",
     "website": "",
-    "email": "rmamiya@hawaii.edu"
+    "email": "rmamiya@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "CARP Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Chizuko Allen",
     "website": "https://www.carplife.org",
-    "email": "chizuko@hawaii.edu"
+    "email": "chizuko@hawaii.edu",
+    "image": "https://images.squarespace-cdn.com/content/5aea18b9ec4eb72fa0676189/1537816691347-7MJBOXEM5KDSSL3WIDT6/CARP-LOGO-colored-light-mark.png?content-type=image%2Fpng"
   },
   {
     "clubName": "Change for Charity",
     "interests": "Service",
     "contact": "Michaela Kop",
     "website": "",
-    "email": "mkop@hawaii.edu"
+    "email": "mkop@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Chemistry Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Taha Elwir",
     "website": "https://chemclubatuhm.weebly.com",
-    "email": "elwira@hawaii.edu"
+    "email": "elwira@hawaii.edu",
+    "image": "https://chemclubatuhm.weebly.com/uploads/1/1/1/0/111020511/screen-shot-2017-08-31-at-8-14-48-pm_orig.png"
   },
   {
     "clubName": "Chess Club",
-    "interests": ["Leisure", "Recreational"],
+    "interests": [
+      "Leisure",
+      "Recreational"
+    ],
     "contact": "Michael Omori",
     "website": "",
-    "email": "omorim@hawaii.edu"
+    "email": "omorim@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcStukKT48v9YB6OMY7ytUKTr_cQxmTDq5qqu6iGC6c7Y-E-J8DO"
   },
   {
     "clubName": "Chi Epsilon",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Theodore Uekawa",
     "website": "https://Sites.google.com/site/xeuhmanoa/",
-    "email": "hawaii.xe@gmail.com"
+    "email": "hawaii.xe@gmail.com",
+    "image": ""
   },
   {
     "clubName": "Chinese Students and Scholars Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Manrui Xue",
     "website": "https://www2.hawaii.edu/~cssauh/",
-    "email": "mxue@hawaii.edu"
+    "email": "mxue@hawaii.edu",
+    "image": "http://www2.hawaii.edu/~cssauh/images/title.jpg"
   },
   {
     "clubName": "Chinese Xiqu Club",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Xingli Zhang",
     "website": "",
-    "email": "xinliz@hawaii.edu"
+    "email": "xinliz@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Church in Honolulu",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Yinghui Chen",
     "website": "https://churchinhonolulu.net",
-    "email": "yinghui@hawaii.edu"
+    "email": "yinghui@hawaii.edu",
+    "image": "http://churchinhonolulu.net/wp-content/uploads/2016/10/Bible.jpg"
   },
   {
     "clubName": "Circle K International",
     "interests": "Service",
     "contact": "Kristian Kim",
     "website": "https://ckiuhmaweebly.com",
-    "email": "knik@hawaii.edu"
+    "email": "knik@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Clay Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Brad Taylor",
     "website": "",
-    "email": "brad2@hawaiiedu"
+    "email": "brad2@hawaiiedu",
+    "image": ""
   },
   {
     "clubName": "Clinical and Translational Research Program Student Organization at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Devin Takahashi",
     "website": "",
-    "email": "devint@hawaii.edu"
+    "email": "devint@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Club Management of America",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kylie Butts",
     "website": "https://cmaa.org/studentmembership",
-    "email": "kyliekb@hawaii.edu"
+    "email": "kyliekb@hawaii.edu",
+    "image": "https://cmaa.org/_design/images/dev/logo.gif"
   },
   {
     "clubName": "Coalition to Stop Campus Hunger",
     "interests": "Service",
     "contact": "Ratu Serupepeli Tagivakatini",
     "website": "",
-    "email": "ratuseru@hawaii.edu"
+    "email": "ratuseru@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "C.O.P. Alaka'ina",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Ilikea Silva",
     "website": "https://www.hawaii.edu/cop/mentoring",
-    "email": "ilikea.silva@hawaii.edu"
+    "email": "ilikea.silva@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Cru",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Liam Tsamous",
     "website": "https://hawaiicru.jimdo.com",
-    "email": "ltsamous@hawaii.edu"
+    "email": "ltsamous@hawaii.edu",
+    "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=320x10000:format=png/path/sf79740c0ec5e164f/image/iab035146b7d1b500/version/1535184052/image.png"
   },
   {
     "clubName": "CTAHR Student Ambassadors",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michelle Au",
     "website": "https://cms.ctahr.hawaii.edu/Academics/ASAO/Ambassadors",
-    "email": "aumi@hawaii.edu"
+    "email": "aumi@hawaii.edu",
+    "image": "https://cms.ctahr.hawaii.edu/portals/0/Users/120/00/1400/CTAHR%20Final.jpg?ver=2018-10-03-121118-327"
   },
   {
     "clubName": "Delta Sigma Pi, Rho Chi",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Victoria Huynh",
     "website": "https://dspuhm.com",
-    "email": ""
+    "email": "",
+    "image": "https://images.squarespace-cdn.com/content/5209b34be4b00fb51876dab6/1574310884150-B6NT7A1EMU3X23IVY9VW/RHO+CHI+Chapter.png?content-type=image%2Fpng"
   },
   {
     "clubName": "Disney Ohana Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Delaney Singletary",
     "website": "https://disneyoc.wixsite.com/disneyohanaclub",
-    "email": "delaneys@hawaii.edu"
+    "email": "delaneys@hawaii.edu",
+    "image": "data:image/jpeg;base64,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"
   },
   {
     "clubName": "Emergency Medicine Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Engineering Ohana",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Creselle Moraels",
     "website": "https://eng.hawaii.edu",
-    "email": "creselle@hawaii.edu"
+    "email": "creselle@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Engineering Network",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jing Yang Zheng",
     "website": "https://enuhm.com",
-    "email": "jzheng@hawaii.edu"
+    "email": "jzheng@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Eta Kappa Nu",
     "interests": "Honorary Society",
     "contact": "Jeanalyn Wadsock-Myers",
     "website": "https://hknhawaii.weebly.com",
-    "email": "jlwm@hawaii.edu"
+    "email": "jlwm@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Eta Sigma Delta",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Tara-Ann Marie Pacubas",
     "website": "https://www.chrie.org/i4a/pages/index.cfm?pageid=1",
-    "email": "tpacubas@hawaii.edu"
+    "email": "tpacubas@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Ethnic Studies Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Ruben Campos",
     "website": "",
-    "email": "recampos@hawaii.edu"
+    "email": "recampos@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Every Nation Campus Pearlside",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Taylor Mahi",
     "website": "",
-    "email": "tmahi@hawaii.edu"
+    "email": "tmahi@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Family Medicine Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Anthony Knon",
     "website": "",
-    "email": "aknon@hawaii.edu"
+    "email": "aknon@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Financial Management Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nicholas Miyamoto",
     "website": "https://fmahawaii.club",
-    "email": "npmiyamo@hawaii.edu"
+    "email": "npmiyamo@hawaii.edu",
+    "image": "https://static.wixstatic.com/media/c20262_b490e6849a0a4a9b92e0245568c86bfd~mv2.png/v1/crop/x_0,y_63,w_1312,h_1073/fill/w_210,h_171,al_c,q_80,usm_0.66_1.00_0.01/Screen%20Shot%202018-08-31%20at%206_37_46%20PM.webp"
   },
   {
     "clubName": "Food Science and Human Nutrition Council",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michael Yanos",
     "website": "https://fshncouncil.wordpress.com",
-    "email": "mpyanos@hawaii.edu"
+    "email": "mpyanos@hawaii.edu",
+    "image": "https://fshncouncil.files.wordpress.com/2017/05/cropped-heart-fruit-and-vegetables.jpg"
   },
   {
     "clubName": "Formula SAE Rainbow Warrior Racing",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Silvija Djelic",
     "website": "https://rip.eng.hawaii.edu/project/sae-formula",
-    "email": "silvijad@hawaii.edu"
+    "email": "silvijad@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Freestyle Dance Club",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Jason Wong",
     "website": "",
-    "email": "jbwong@hawaii.edu"
+    "email": "jbwong@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Friends of the Family",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Brigitte Tampon-Aragon",
     "website": "https://fofatuhm.wixsite.com/home",
-    "email": "btampona@hawaii.edu"
+    "email": "btampona@hawaii.edu",
+    "image": "https://fofatuhm.weebly.com/uploads/8/2/2/7/82279120/bitmap1922257707502208323.png"
   },
   {
     "clubName": "Generation Action at the UH at Mānoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Emma Ishihara",
     "website": "https://act.plannedparenthoodaction.org/groups-university-of-hawaii-manoa-generation-action",
-    "email": "emmaishi@hawaii.edu"
+    "email": "emmaishi@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Glass Art Family",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nygell  Halverson",
     "website": "",
-    "email": "nygell@hawaii.edu"
+    "email": "nygell@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Golden Key International Honour Society",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Arlene Colis",
     "website": "https://goldenkeyhawaii.wixsite.com/uhmgkwebsite",
-    "email": "arlenejc@hawaii.edu"
+    "email": "arlenejc@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Graduate Arts Council",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Katherine Kazlauskas",
     "website": "",
-    "email": "kvk@hawaii.edu"
+    "email": "kvk@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Graduate Business Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kirstin Seal",
     "website": "https://sites.google.com/a/hawaii.edu/graduate-business-student-association",
-    "email": "seal@hawaii.edu"
+    "email": "seal@hawaii.edu",
+    "image": "https://sites.google.com/a/hawaii.edu/graduate-business-student-association/_/rsrc/1566610705208/config/customLogo.gif?revision=3"
   },
   {
     "clubName": "Graduate Hui Ola Pono",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Princess Mae Visconde",
     "website": "",
-    "email": "pviscond@hawaii.ed"
+    "email": "pviscond@hawaii.ed",
+    "image": ""
   },
   {
     "clubName": "Graduate Student Sociological Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Hannah Liebreich",
     "website": "",
-    "email": "hannahli@hawaii.edu"
+    "email": "hannahli@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Graduate Women in Science Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Madeline McKenna",
     "website": "https://www.gwishawaii.org",
-    "email": "mmck@hawaii.edu"
+    "email": "mmck@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Grey Hats at UHM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Chad Morita",
     "website": "",
-    "email": "chadmmm@hawaii.edu"
+    "email": "chadmmm@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hanwoori Hawaii",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Ingrid Adams",
     "website": "",
-    "email": "adamsi@hawaii.edu"
+    "email": "adamsi@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hawaii African Dance and Drum Club RIO at UHM",
-    "interests": ["Recreational", "Leisure"],
+    "interests": [
+      "Recreational",
+      "Leisure"
+    ],
     "contact": "Elizabeth (Liza) Simon",
     "website": "",
-    "email": "csimon@hawaii.edu"
+    "email": "csimon@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hawaii Chapter of the Society for Conservation Biology",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Chad Wilhite",
     "website": "https://www.hiscb.org",
-    "email": "cwilhite@hawaii.edu"
+    "email": "cwilhite@hawaii.edu",
+    "image": "https://www.hiscb.org/uploads/1/9/4/3/19437393/screen-shot-2017-01-31-at-11-52-15-am.png"
   },
   {
     "clubName": "Hawaii Educational Research Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Susan Saka",
     "website": "https://hawaii.edu/hera",
-    "email": "ssaka@hawaii.edu"
+    "email": "ssaka@hawaii.edu",
+    "image": "https://hawaii.edu/hera/images/chera.jpg"
   },
   {
     "clubName": "Hawaii H.O.M.E. Project",
     "interests": "Service",
     "contact": "Jason Huynh",
     "website": "https://www.hawaiihomeproject.org",
-    "email": "huynhjas@hawaii.edu"
+    "email": "huynhjas@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hawaii Shotokan Karate",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Scott Oshiro",
     "website": "https://hawaiishotokankarate.com",
-    "email": "scottosh@hawaii.edu"
+    "email": "scottosh@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hawaii Streams and Ecosystems",
     "interests": "Service",
     "contact": "Aurelia Gonzalez",
     "website": "",
-    "email": "aureliag@hawaii.edu"
+    "email": "aureliag@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hawaii Student Entrepreneurs",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Asher Uchiyama",
     "website": "https://www.hsentrepreneurs.com",
-    "email": "au234@hawaii.edu"
+    "email": "au234@hawaii.edu",
+    "image": "http://www.hsentrepreneurs.com/wp-content/uploads/2017/07/hse_logo-1-e1500527836708.png"
   },
   {
     "clubName": "Hawaii Undergraduate Initiative",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kaitlin Nalani Tilitile",
     "website": "https://manoa.hawaii.edu/omsshui",
-    "email": "tilitie@hawaii.edu"
+    "email": "tilitie@hawaii.edu",
+    "image": "https://manoa.hawaii.edu/omsshui/images/logo.png"
   },
   {
     "clubName": "Her Campus Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Avery Nueva",
     "website": "https://www.hercampus.com/school/hawaii",
-    "email": "averymn@hawaii.edu"
+    "email": "averymn@hawaii.edu",
+    "image": "https://www.hercampus.com/sites/default/files/banners/Banner%20%2823%29.jpg"
   },
   {
     "clubName": "High Intensity Athletics at UHM",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Lynette Rudolfo",
     "website": "",
-    "email": "rudolfo@hawaii.edu"
+    "email": "rudolfo@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Higher Education Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kawehi Kina",
     "website": "",
-    "email": "kinak@hawaii.edu"
+    "email": "kinak@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "HOSA at UHM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jessica Loi",
     "website": "https://hosauhm.wixsite.com/home",
-    "email": "jkloi@hawaii.edu"
+    "email": "jkloi@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hui Dui",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Katie Joe Lang",
     "website": "",
-    "email": "langk@hawaii.edu"
+    "email": "langk@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hui Mālama Honua",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Donna Lee (Sweetie) Kuehu",
     "website": "",
-    "email": "dkueku@hawaii.edu"
+    "email": "dkueku@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Hui Ola Pono",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Swastika Maharjan",
     "website": "https://publichealthhui.weebly.com",
-    "email": "swastika@hawaii.edu"
+    "email": "swastika@hawaii.edu",
+    "image": "http://publichealthhui.weebly.com/uploads/1/3/1/3/13132264/1365054056.png"
   },
   {
     "clubName": "Ilima Sacnas Chapter at UH",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Dr. Healani Chang",
     "website": "https://www.sacnashawaii.org",
-    "email": "hchang@hawaii.edu"
+    "email": "hchang@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Information Technology Management Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Luke Clements",
     "website": "https://www.itmahawaii.com/",
-    "email": "lclement@hawaii.edu"
+    "email": "lclement@hawaii.edu",
+    "image": "https://www.itmahawaii.com/wp-content/uploads/2019/09/cropped-ITMA-Text-Logo-2019.png"
   },
   {
     "clubName": "Interactive Story Telling Club",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Kyle Tran",
     "website": "",
-    "email": "kyletran@hawaii.edu"
+    "email": "kyletran@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Inter-Business Council",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jordan Abanto",
     "website": "https://www.ibcuhm.com",
-    "email": "abanto@hawaii.edu"
+    "email": "abanto@hawaii.edu",
+    "image": "http://www.ibcuhm.com/wp-content/uploads/2018/03/ibc-logo-1.jpg"
   },
   {
     "clubName": "International Business Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Rachel Dunn",
     "website": "https://ibouhm.com",
-    "email": "dunnrach@hawaii.edu"
+    "email": "dunnrach@hawaii.edu",
+    "image": "https://images.squarespace-cdn.com/content/599e0588ccc5c5c024b0a411/1546068059779-BY2UO4HBSQ4FY8IZ52ON/IBO+Logo+White+copy.png?format=1500w&content-type=image%2Fpng"
   },
   {
     "clubName": "International Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Ryan Matsumoto",
     "website": "https://www.isauhm.com",
-    "email": "ryantm2@hawaii.edu"
+    "email": "ryantm2@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Internal Medicine Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Geoffrey Kusaka",
     "website": "",
-    "email": "gkusaka@hawaii.edu"
+    "email": "gkusaka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Intervarsity Christian Fellowship",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Sabrina Summers",
     "website": "https://www.intervarsityhawaii.org",
-    "email": "summerss@hawaii.edu"
+    "email": "summerss@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Institute of Electrical and Electronic Engineers",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Christopher J Blake",
     "website": "https://ieeeatuhm.com",
-    "email": "cjblake@hawaii.edu"
+    "email": "cjblake@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Jehowah's Witnesses at the University of Hawai'i - Manoa",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Roberta Baird",
     "website": "",
-    "email": "bairdr@hawaii.edu"
+    "email": "bairdr@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Judo Club,Team at UH at Manoa",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Larson Abilla",
     "website": "https://www2.hawaii.edu/~judo",
-    "email": "labilla@hawaii.edu"
+    "email": "labilla@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "K-Mixx Club",
-    "interests": ["Leisure", "Recreational"],
+    "interests": [
+      "Leisure",
+      "Recreational"
+    ],
     "contact": "Isaiah Avilla",
     "website": "",
-    "email": "isaiaha@hawaii.edu"
+    "email": "isaiaha@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Ka Lau O Ka Lahui",
     "interests": "Service",
     "contact": "Karli Rose Keanu",
     "website": "",
-    "email": "kkeanu4@hawaii.edu"
+    "email": "kkeanu4@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Ka Lama Kukui Interest Group",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Kālai Pohaku",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Diana Moana Nomura",
     "website": "",
-    "email": "nomura76@hawaii.edu"
+    "email": "nomura76@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Ka Mea Kolo Entomology Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michelle Au",
     "website": "https://sites.google.com/site/kameakolo",
-    "email": "aumi@hawaii.edu"
+    "email": "aumi@hawaii.edu",
+    "image": "https://sites.google.com/site/kameakolo/_/rsrc/1472865452019/config/customLogo.gif?revision=3"
   },
   {
     "clubName": "Kanoa",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Ebony Tapasa",
     "website": "",
-    "email": "etapasa@hawaii.edu"
+    "email": "etapasa@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Kappa Sigma",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Carlos Tucker",
     "website": "",
-    "email": "carlos42@hawaii.edu"
+    "email": "carlos42@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Katipunan Club",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Christine Joy Baltazar",
     "website": "https://manoa.hawaii.edu/rio/katipunan/",
-    "email": "cbaltaza@hawaii.edu"
+    "email": "cbaltaza@hawaii.edu",
+    "image": "https://pbs.twimg.com/profile_images/378800000450638391/8a7153e0724b656994364ece6208db9b_400x400.png"
   },
   {
     "clubName": "Kempo Club at UHM",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Kevin Hanaoka",
     "website": "",
-    "email": "hanaokak@hawaii.edu"
+    "email": "hanaokak@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Kim's Tae Kwon Do @ UHM",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Mason Nakadomari",
     "website": "https://hawaiitaekwondo.com",
-    "email": "nakadoma@hawaii.edu"
+    "email": "nakadoma@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Kinesiology and Rehabilitation Sciences Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Keaton Yaw",
     "website": "",
-    "email": "keatony@hawaii.edu"
+    "email": "keatony@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Korean Drama Interest Group",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Jarren Takaki",
     "website": "",
-    "email": "jarrent@hawaii.edu"
+    "email": "jarrent@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "La Raza Unida",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Shea Ryan Charles",
     "website": "",
-    "email": "sc67@hawaii.edu"
+    "email": "sc67@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Lifesaver Club",
     "interests": "Service",
     "contact": "Sarai Vargas",
     "website": "",
-    "email": "svargas9@hawaii.edu"
+    "email": "svargas9@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Living Stone Chinese Christian Fellowship",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Liana Wang",
     "website": "",
-    "email": "lwang2@hawaii.edu"
+    "email": "lwang2@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Loea Consulting Group (Consultx)",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Ha Nguyen",
     "website": "",
-    "email": "ha777@hawaii.edu"
+    "email": "ha777@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Lotus",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Venkataraman Balaraman",
     "website": "",
-    "email": "Fmuza@hawaii.edu"
+    "email": "Fmuza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Astronomical Technologies (MAT)",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Clinton Ng",
     "website": "",
-    "email": "clng@hawaii.edu"
+    "email": "clng@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Creative Production",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Tiffany Anne Ganti",
     "website": "",
-    "email": "tganti@hawaii.edu"
+    "email": "tganti@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Darts",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Katsuyuki Yoshia",
     "website": "",
-    "email": "ky7312@hawaii.edu"
+    "email": "ky7312@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Debate Union at UHM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michelle Park",
     "website": "",
-    "email": "parkmj@hawaii.edu"
+    "email": "parkmj@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Improv Players",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Emily Steward",
     "website": "",
-    "email": "esteward@hawaii.edu"
+    "email": "esteward@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Peer Advisor Program",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Sherylynne Andrada",
     "website": "https://manoa.hawaii.edu/undergrad/mac/mpa",
-    "email": "sma3@hawaii.edu"
+    "email": "sma3@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Pre-Law Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Teana Motoyama",
     "website": "",
-    "email": "teanam@hawaii.edu"
+    "email": "teanam@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Manoa Sophomore Experience",
     "interests": "Student Affairs",
     "contact": "Leilani Harjati",
     "website": "https://manoa.hawaii.edu/undergrad/sophomore",
-    "email": "ltakeuc@hawaii.edu"
+    "email": "ltakeuc@hawaii.edu",
+    "image": "http://manoa.hawaii.edu/omsshui/resources/images/mse.png"
   },
   {
     "clubName": "Manoa Ultimate Disc",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Van Wishingrad",
     "website": "",
-    "email": "vanw@hawaii.edu"
+    "email": "vanw@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Marine Robotics at University of Hawaii",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Paula Rae Penullar",
     "website": "https://rig.eng.hawaii.edu/research/unmanned-x-systems/",
-    "email": "paularae@hawaii.edu"
+    "email": "paularae@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Medt Student Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Lauren Loualhati",
     "website": "",
-    "email": "lloual3@hawaii.edu"
+    "email": "lloual3@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Medical Education Student Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Dann Poe ī",
     "website": "",
-    "email": "dpoei@hawaii.edu"
+    "email": "dpoei@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Medical Innovation and Design Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Alexander Ribao",
     "website": "https://mindhawaii.com",
-    "email": "ribaoa@hawaii.edu"
+    "email": "ribaoa@hawaii.edu",
+    "image": "http://128.171.104.188/uploads/S3YLRnHNrvKsYrHTIsoV1w.png"
   },
   {
     "clubName": "Medical Students for Choice",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Clare-Marie Anderson",
     "website": "https://msfc.org",
-    "email": "cmanders@hawaii.edu"
+    "email": "cmanders@hawaii.edu",
+    "image": "https://msfc.org/wp-content/themes/ms4c/images/logo.png"
   },
   {
     "clubName": "Medical Student Mentorship Program",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Eileen Chen",
     "website": "https://uhmsmp.org",
-    "email": "esrchen@hawaii.edu"
+    "email": "esrchen@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Medical Students of the Class of 2022 at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jester Galiza",
     "website": "",
-    "email": "jpgaliza@hawaii.edu"
+    "email": "jpgaliza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Micronesia Connections at UH Manoa",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Austin Haleyalpiy",
     "website": "",
-    "email": "austin46@hawaii.edu"
+    "email": "austin46@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "MILUN",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Man Dhoj Rai",
     "website": "",
-    "email": "mandhoj@hawaii.edu"
+    "email": "mandhoj@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Mortar Board Senior National Honor Society (Hui Po'okela Chapter)",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Aime Le",
     "website": "https://mortarboardmanoa.weebly.com",
-    "email": "ale77@hawaii.edu"
+    "email": "ale77@hawaii.edu",
+    "image": "https://mortarboardmanoa.weebly.com/uploads/2/3/0/1/23010832/mortar-board.jpg"
   },
   {
     "clubName": "Nā Hawai'i 'Imi Loa Hui Haumāna",
     "interests": "Service",
     "contact": "Sharnelle Renti Cruz",
     "website": "https://nhilhh.weebly.com",
-    "email": "sprc@hawaii.edu"
+    "email": "sprc@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Na Koa",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Jace Nakama",
     "website": "https://oahuchurch.org",
-    "email": "jacect@hawaii.edu"
+    "email": "jacect@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Na Koa Lani Booster Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Brock Barr",
     "website": "",
-    "email": "barrb@hawaii.edu"
+    "email": "barrb@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Narrative Medicine Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kyung Moo Kim",
     "website": "",
-    "email": "kkim29@hawaii.edu"
+    "email": "kkim29@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "National Panhellenic Conferene",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Avery Nueva",
     "website": "https://uhmpanhel.com",
-    "email": "averymn@hawaii.edu"
+    "email": "averymn@hawaii.edu",
+    "image": "https://cdn.shopify.com/s/files/1/0097/5692/products/Screen_Shot_2015-12-11_at_11.40.50_AM_1200x.png?v=1571264682"
   },
   {
     "clubName": "Natural Sciences Student Ambassadors",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Taha Elwir",
     "website": "",
-    "email": "elwira@hawaii.edu"
+    "email": "elwira@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "OB,GYN Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Clare-Marie Anderson",
     "website": "",
-    "email": "cmanders@hawaii.edu"
+    "email": "cmanders@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Oncology Interest Group at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nicholas Fancher",
     "website": "",
-    "email": "nfancher@hawaii.edu"
+    "email": "nfancher@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Opthalmology Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kevin Card",
     "website": "",
-    "email": "cardk@hawaii.edu"
+    "email": "cardk@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pacific Asia Travel Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jay-O Alforque",
     "website": "https://patahawaii.com",
-    "email": "alforque@hawaii.edu"
+    "email": "alforque@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pacific Asian Legal Student Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Richard Crum",
     "website": "https://www.law.hawaii.edu/student-organization",
-    "email": "crumr@hawaii.edu"
+    "email": "crumr@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Partners in Health Engage UH Manoa Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Akane Dunn",
     "website": "https://www.pih.org/engage",
-    "email": "akane2@hawaii.edu"
+    "email": "akane2@hawaii.edu",
+    "image": "https://www.pih.org/sites/default/files/pih-header-logo-orange.png"
   },
   {
     "clubName": "Partnership for Social Justice at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Patient Safety and Quality Improvement  Interest Group",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kristine Vo",
     "website": "",
-    "email": "kbvo@hawaii.edu"
+    "email": "kbvo@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pediatric Interest Group at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kevin Pham",
     "website": "",
-    "email": "kevinph@hawaii.edu"
+    "email": "kevinph@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Peer Mentor Ohana",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Rosemarie Woodruff",
     "website": "",
-    "email": ""
+    "email": "",
+    "image": ""
   },
   {
     "clubName": "Peer Mentoring Program at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Phi Alpha Nu Sigma Honor Society",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Julie Anne Bacaro",
     "website": "",
-    "email": "jafb@hawaii.edu"
+    "email": "jafb@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Phi Alpha Theta (Alpha Beta Epsilon)",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Emily Holmberg",
     "website": "https://phialphatheta.org",
-    "email": "emilyhol@hawaii.edu"
+    "email": "emilyhol@hawaii.edu",
+    "image": "https://phialphatheta.org/wp-content/uploads/footer-logo.png"
   },
   {
     "clubName": "Phi Mu",
-    "interests": ["Fraternity", "Sorority"],
+    "interests": [
+      "Fraternity",
+      "Sorority"
+    ],
     "contact": "Sarai Vargas",
     "website": "https://hawaii.phimu.org",
-    "email": "svargas9@hawaii.edu"
+    "email": "svargas9@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Philippine Medical Student Association of Hawaii",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Arlene Kiyohara",
     "website": "",
-    "email": "arlenecp@hawaii.edu"
+    "email": "arlenecp@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pi Gamma Mu",
     "interests": "Honorary Society",
     "contact": "Vendela Lindahl",
     "website": "",
-    "email": "vendelal@hawaii.edu"
+    "email": "vendelal@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pi Sigma Alpha- Tau Pi Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Justin Menina",
     "website": "",
-    "email": "jmenina@hawaii.edu"
+    "email": "jmenina@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pi Tau Sigma",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michael Dang",
     "website": "https://uhmsigmapi.wixsite.com",
-    "email": "mkdang@hawaii.edu"
+    "email": "mkdang@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Planners of Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nanea Lo",
     "website": "https://plannersofhawaii.weebly.com",
-    "email": "plannersofhawaii@gmail.com"
+    "email": "plannersofhawaii@gmail.com",
+    "image": "https://plannersofhawaii.weebly.com/uploads/1/2/9/1/129197341/75264957-110078260419755-9212890001665163264-n_orig.jpg"
   },
   {
     "clubName": "Political Science Club at UH",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Justin Menina",
     "website": "",
-    "email": "jmenina@hawaii.edu"
+    "email": "jmenina@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Powerlifting Club at the UH at Manoa",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Jaron Yamane",
     "website": "",
-    "email": "jarony@hawaii.edu"
+    "email": "jarony@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pre-Medical Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Taylor Pu'uohau",
     "website": "https://premed-at-uhm.uhm.squarespace.com",
-    "email": "tpuuohau@hawaii.edu"
+    "email": "tpuuohau@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Pre-Phamarcy Association at UH Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Tran Trinh",
     "website": "https://uhmprepharmacyassociation.wordpress.com",
-    "email": "trant2@hawaii.edu"
+    "email": "trant2@hawaii.edu",
+    "image": "http://manoa.hawaii.edu/undergrad/pac/health/wp-content/uploads/2013/10/1962275_10203509013459391_9209528622858980664_o-300x165.jpg"
   },
   {
     "clubName": "Primary Care Progress at University of Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jester Galiza",
     "website": "",
-    "email": "jpgaliza@hawaii.edu"
+    "email": "jpgaliza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Protection of Ocean and Nature Organization",
     "interests": "Service",
     "contact": "Maiko Ikeda",
     "website": "https://ponohawaii.org",
-    "email": "maikoi@hawaii.edu"
+    "email": "maikoi@hawaii.edu",
+    "image": "http://howtodoright.com/wp-content/uploads/2017/04/why-aera-sea-turtles-endangred-748x561.jpg"
   },
   {
     "clubName": "Psi SIgma: The Psychology Connection",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "BrandonBanuelos",
     "website": "https://thepsychologyconnection.blogspot.com",
-    "email": "bbanuelo@hawaii.ed"
+    "email": "bbanuelo@hawaii.ed",
+    "image": "https://4.bp.blogspot.com/-9UMMS5KZ5z4/W4-unEFG6JI/AAAAAAAACCQ/yo-4WJuTgaIAEJOaDvPh2dwYnx8AX2HOgCK4BGAYYCw/s342/Psi%2BSigma%2BLogo.png"
   },
   {
     "clubName": "Public Administration Student Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Lydia Chung",
     "website": "",
-    "email": "lydiajc@hawaii.edu"
+    "email": "lydiajc@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Public Relations Student Society of America",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Mei Jie Wu",
     "website": "",
-    "email": "meijiew@hawaii.edu"
+    "email": "meijiew@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Rainbow Jugglers Juggling Club",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Stephen Case",
     "website": "https://www.rainbowjugglers.org",
-    "email": "stevec@hawaii.edu"
+    "email": "stevec@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Regent and Presidential Scholars Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Noah Rodrigues",
     "website": "",
-    "email": "noahrodr@hawaii.edu"
+    "email": "noahrodr@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Reformed University Fellowship",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Joshua Hu",
     "website": "https://rvfhawaii.org",
-    "email": "joshuahu@hawaii.edu"
+    "email": "joshuahu@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Rural Health Interest Group at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "S-cubed",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Barbara Watanabe",
     "website": "https://manoa.hawaii.edu/undergrad/sss",
-    "email": "blwatana@hawaii.edu"
+    "email": "blwatana@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Salsa Dancing @ UHM",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Gordon Walker",
     "website": "",
-    "email": "gwalker@hawaii.edu"
+    "email": "gwalker@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Science Communicators Ohana",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Sarah Tucker",
     "website": "",
-    "email": "tucker4@hawaii.edu"
+    "email": "tucker4@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Second Language Studies Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Leeseul Park",
     "website": "https://blog.hawaii.edu/slssa/",
-    "email": "leeseul@hawaii.edu"
+    "email": "leeseul@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Shooting Stars",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michael Liu",
     "website": "",
-    "email": "liumicha@hawaii.edu"
+    "email": "liumicha@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Silver Wings",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Anthony Lee",
     "website": "",
-    "email": "awl@hawaii.edu"
+    "email": "awl@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Smash Bros. Club at The UH at Manoa",
-    "interests": ["Leisure", "Recreational"],
+    "interests": [
+      "Leisure",
+      "Recreational"
+    ],
     "contact": "Isaiah Sheppard-Nelson",
     "website": "",
-    "email": "isaiahsn@hawaii.edu"
+    "email": "isaiahsn@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Society of American Archivists University of Hawai'i Student Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Marleah Renti Cruz",
     "website": "https://hisaasc.weebly.com",
-    "email": "marleah@hawaii.edu"
+    "email": "marleah@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Society of Automotive Engineers at UH Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Michael Dang",
     "website": "",
-    "email": "mkdang@hawaii.edu"
+    "email": "mkdang@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Society for Human Resource Management, Aloha Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Josiah J. Villar",
     "website": "https://shrmuhm.com",
-    "email": "josiahlj@hawaii.edu"
+    "email": "josiahlj@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Society of Nepalese in Hawaii",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Man Dhoj Rai",
     "website": "https://www.esneha.org",
-    "email": "mandhoj@hawaii.edu"
+    "email": "mandhoj@hawaii.edu",
+    "image": "http://esneha.org/wp-content/uploads/2018/03/1b_MemorialDay_t13.jpg"
   },
   {
     "clubName": "Society of Physics Students at the UH at Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Zachary Martin",
     "website": "",
-    "email": "zmart@hawaii.edu"
+    "email": "zmart@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Society of Women Engineers",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Candice Sarangay",
     "website": "https://uhm.swe.org",
-    "email": "sarangay@hawaii.edu"
+    "email": "sarangay@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Spanish and Portugese Club",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Megan Fereira",
     "website": "",
-    "email": "fereira@hawaii.edu"
+    "email": "fereira@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Speech Communication Society",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Kittra Evenson",
     "website": "",
-    "email": "evenson8@hawaii.edu"
+    "email": "evenson8@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "STAR Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Sharon Widup",
     "website": "https://www.star.hawaii.edu",
-    "email": "swidup@hawaii.edu"
+    "email": "swidup@hawaii.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHyxkLCs7we4eS_sZk-wiWEd0ylxzmsqlPJzEQ_eJSoxeUASTx"
   },
   {
     "clubName": "Stole Society",
     "interests": "Student Affairs",
     "contact": "Mark Oandasan",
     "website": "",
-    "email": "markco@hawaii.edu"
+    "email": "markco@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Students for a National Health Program at University of Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jester Galiza",
     "website": "",
-    "email": "jpgaliza@hawaii.edu"
+    "email": "jpgaliza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Student Immunization Initiative",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Albert To",
     "website": "https://www.sihawaii.org",
-    "email": "albertto@hawaii.edu"
+    "email": "albertto@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Student Interest Group for Neurology and Psychiatry",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Christina Tse",
     "website": "",
-    "email": "tsec@hawaii.edu"
+    "email": "tsec@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Students Interested in Pathology",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Chad Russell",
     "website": "",
-    "email": "chadruss@hawaii.edu"
+    "email": "chadruss@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Students with Keiki @ the University of Hawaii- Manoa",
     "interests": "Student Affairs",
     "contact": "Angelique K. Solomon",
     "website": "https://uhmstudentswkeiki.wixsite.com/website",
-    "email": "gotkids@hawaii.edu"
+    "email": "gotkids@hawaii.edu",
+    "image": "https://static.wixstatic.com/media/8e95e8_9448fb4f2fe640329f43b2a72cf4d8ab~mv2.jpg/v1/fill/w_500,h_500,al_c,q_80,usm_0.66_1.00_0.01/34f71325f8f95ffa852d63401426d3b4.webp"
   },
   {
     "clubName": "Student Nurses' Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Miki Matsuoka",
     "website": "",
-    "email": "snamanoa@hawaii.edu"
+    "email": "snamanoa@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Student Veteran Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Andrew Lanza",
     "website": "",
-    "email": "ajlanza@hawaii.edu"
+    "email": "ajlanza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Supporting Women in Information, Technology and Computing in Hawaii at the UH at Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Quinne Uchida",
     "website": "https://swith-uhm.github.io",
-    "email": "qauchida@hawaii.edu"
+    "email": "qauchida@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Surfrider Foundation UH Manoa Club",
-    "interests": ["Sports", "Leisure"],
+    "interests": [
+      "Sports",
+      "Leisure"
+    ],
     "contact": "Laurel Perun",
     "website": "https://uhmanoasurfrider.wordpress.com",
-    "email": "lperun@hawaii.edu"
+    "email": "lperun@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Thai Studies Club",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Anongard Nusartlert",
     "website": "https://thaistudieshawaii.wordpress.com",
-    "email": "an2009@hawaii.edu"
+    "email": "an2009@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Anime Manga Society of Hawaii at UH Manoa",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Barryn Chun",
     "website": "https://www.amsmanoa.org",
-    "email": "chun808@hawaii.edu"
+    "email": "chun808@hawaii.edu",
+    "image": "https://www.amsmanoa.org/wp-content/uploads/2019/08/AMS-@-UH-Manoa-Logo-Long-W.png"
   },
   {
     "clubName": "The Elohist Club at UH",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Christopher Blake",
     "website": "https://elohist.club",
-    "email": "cjblake@hawaii.edu"
+    "email": "cjblake@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Engineers' Council at the University of Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jianna Leonora Orias",
     "website": "https://www.ecuh.org",
-    "email": "jlorias@hawaii.edu"
+    "email": "jlorias@hawaii.edu",
+    "image": "https://secureservercdn.net/166.62.106.104/dvj.2d9.myftpupload.com/wp-content/uploads/2019/04/ECUH-Alternate-Logo.png"
   },
   {
     "clubName": "The Ethnomusicology Association",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Travis Shaver",
     "website": "https://www.emauhm.org/",
-    "email": "tshaver@hawaii.edu"
+    "email": "tshaver@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Healing Earth Initiative",
     "interests": "Service",
     "contact": "Ashley Ostendorf",
     "website": "",
-    "email": "ashleyno@hawaii.edu"
+    "email": "ashleyno@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The iMua Learned Society at the Univeristy of Hawaii (iMua Living Labs)",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Justin Menina",
     "website": "https://manoa.cc",
-    "email": "jmenina@hawaii.edu"
+    "email": "jmenina@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Language Documentation Training Center",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jessica Charest",
     "website": "https://ldtc.org",
-    "email": "jcharest@hawaii.edu"
+    "email": "jcharest@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The National Society of Collegiate Scholars, UH at Manoa Chapter",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Alyssa Hironaka",
     "website": "https://nscs.org",
-    "email": "alyssahi@hawaii.edu"
+    "email": "alyssahi@hawaii.edu",
+    "image": "http://campustimes.org/wp-content/uploads/2014/10/NSCS-logo1-300x300.png"
   },
   {
     "clubName": "The Navigators",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Lauren Block",
     "website": "",
-    "email": "blockln7@hawaii.edu"
+    "email": "blockln7@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Pre-Dental Association at the UH at Manoa",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Paolo Atienza",
     "website": "",
-    "email": "patienza@hawaii.edu"
+    "email": "patienza@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "The Students for Success Club",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Nicole Panos",
     "website": "",
-    "email": "npanos@hawaii.edu"
+    "email": "npanos@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Timpuyog Organization",
-    "interests": ["Ethnic", "Cultural"],
+    "interests": [
+      "Ethnic",
+      "Cultural"
+    ],
     "contact": "Jane Nicole Teneza",
     "website": "https://manoa.hawaii.edu/ilokano/timpuyog.html",
-    "email": "teneza20@hawaii.edu"
+    "email": "teneza20@hawaii.edu",
+    "image": "https://manoa.hawaii.edu/ilokano/images/ilokano_logo.png"
   },
   {
     "clubName": "Transcendental Meditation Club",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Taryn Bond",
     "website": "",
-    "email": "BondTL@hawaii.edu"
+    "email": "BondTL@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Travel Industry Management Student Association",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Sharmaine Domingo",
     "website": "https://www.timsaatuhm.com",
-    "email": "sd21@hawaii.edu"
+    "email": "sd21@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Tropical Plant and Soil Sciences Graduate Student Organization",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Jaclyn Nicole R. Uy",
     "website": "",
-    "email": "uyjnr69@hawaii.edu"
+    "email": "uyjnr69@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Ultrasound Interest Group at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Volunteers for Intercultural and Definitive Adventures (VIDA)",
     "interests": "Service",
     "contact": "Airi Morita",
     "website": "https://vidahawaii.wixsite.com/uhmanoa",
-    "email": "airimori@hawaii.edu"
+    "email": "airimori@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "WADEM SIG at UHM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Gary Glauberman",
     "website": "",
-    "email": "glauber@hawaii.edu"
+    "email": "glauber@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Waikiki Acrobatics Troupe",
-    "interests": ["Leisure", "Recreational"],
+    "interests": [
+      "Leisure",
+      "Recreational"
+    ],
     "contact": "Liam Griffin",
     "website": "",
-    "email": "liam9999@hawaii.edu"
+    "email": "liam9999@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Wesley Foundation @ UH Manoa",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Sateki Taulanga",
     "website": "https://Wesleyfoundationhawaii.com",
-    "email": "st37@hawaii.edu"
+    "email": "st37@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Wilderness Medicine Hawaii",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Weston Mccue",
     "website": "",
-    "email": "wmccue@hawaii.edu"
+    "email": "wmccue@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Women's Interest Group at JABSOM",
-    "interests": ["Academic", "Professional"],
+    "interests": [
+      "Academic",
+      "Professional"
+    ],
     "contact": "Amandalin Rock",
     "website": "",
-    "email": "rocka@hawaii.edu"
+    "email": "rocka@hawaii.edu",
+    "image": ""
   },
   {
     "clubName": "Younglife",
-    "interests": ["Religious", "Spiritual"],
+    "interests": [
+      "Religious",
+      "Spiritual"
+    ],
     "contact": "Makenzie Hickey",
     "website": "https://younglife.org",
-    "email": "mmhickey@hawaii.edu"
+    "email": "mmhickey@hawaii.edu",
+    "image": "https://www.younglife.org/_layouts/images/PublicSite/YL-Logo-NewGreenWhite_NoBorder_195.png"
   }
 ]
-

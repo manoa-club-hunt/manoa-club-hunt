@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'semantic-ui-react';
+import { Card, Button, Image } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
@@ -17,7 +17,11 @@ class Club extends React.Component {
 
     return (
         <Card centered className="clubcard">
-          <Card.Content textAlign="center" header={this.props.club.clubName}/>
+          <Card.Content textAlign="center">
+            <Image src={this.props.club.image} centered size="tiny"/>
+            <hr />
+            <Card.Header>{this.props.club.clubName}</Card.Header>
+          </Card.Content>
           <Card.Content extra className="cardButtonExtra">
               <Button compact>
                 <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>

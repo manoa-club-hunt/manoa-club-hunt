@@ -22,6 +22,8 @@ const makeSchema = (allInterests) => new SimpleSchema({
   contact: String,
   website: { type: String, defaultValue: '' },
   email: { type: String, defaultValue: '' },
+  image: { type: String, defaultValue:
+        'https://clt.manoa.hawaii.edu/wp-content/uploads/2016/08/Manoa-seal-297x300.png' },
   });
 
 /** Renders the Page for adding a document. */
@@ -29,9 +31,9 @@ class AddClub extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { clubName, interests, contact, website, email } = data;
+    const { clubName, interests, contact, website, email, image } = data;
     const owner = Meteor.user().username;
-    Clubs.insert({ clubName, interests, contact, website, email, owner },
+    Clubs.insert({ clubName, interests, contact, website, email, image, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -59,6 +61,8 @@ class AddClub extends React.Component {
                 <TextField name='website' placeholder="e.g.
                   https://coe.hawaii.edu/students/association-educational-communications-technology-aect-hi"/>
                 <TextField name='email' placeholder="e.g. yourname@hawaii.edu"/>
+                <TextField name='image' placeholder="e.g.
+                  https://clt.manoa.hawaii.edu/wp-content/uploads/2016/08/Manoa-seal-297x300.png" />
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
