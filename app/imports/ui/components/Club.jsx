@@ -1,28 +1,31 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Button } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { Link, withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Club extends React.Component {
+
   render() {
-    let clubsite = this.props.club.website;
+    let disable = true;
+    const clubsite = this.props.club.website;
     if (clubsite === '') {
-      clubsite = '/#/notfoundclub';
+      disable = true;
+    } else {
+      disable = false;
     }
-  return (
-        <Card centered>
-          <Card.Content textAlign="center" header={this.props.club.clubName} />
-          <Card.Content textAlign="center">
-            <em>
-              <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
-            </em>
+
+    return (
+        <Card centered className="clubcard">
+          <Card.Content textAlign="center" header={this.props.club.clubName}/>
+          <Card.Content extra className="cardButtonExtra">
+              <Button compact>
+                <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
+              </Button>
+              <Button compact disabled={disable}>
+                <a href={clubsite}>View Website</a>
+              </Button>
           </Card.Content>
-          <Card.Description textAlign="center">
-            <em>
-              <a href={clubsite}>Go to Website</a>
-            </em>
-          </Card.Description>
         </Card>
     );
   }
