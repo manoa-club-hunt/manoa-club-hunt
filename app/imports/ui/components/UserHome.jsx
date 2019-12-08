@@ -28,22 +28,32 @@ class UserHome extends React.Component {
       });
     });
     const sortedClubs = userClubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
+    let hasClubs = true;
+    if (userClubs.length === 0) {
+      hasClubs = false;
+    }
+    console.log(userClubs);
     return (
         <Container>
           <Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>
           <hr />
-          {sortedClubs === [] ?
-              (<Card.Group centered itemsPerRow={8}>
-                {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
-              </Card.Group>) : (
-                  <div>
-                    <Header as="h3" textAlign="center">
-                      No Interests Listed.
-                    </Header>
-                    <Header as="h3" textAlign="center">
-                      Add interests to see clubs with similar interests.
-                    </Header>
-                  </div>)
+          {
+            sortedClubs === [] ?
+                (<Card.Group centered itemsPerRow={8}>
+                  {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
+                </Card.Group>) : (
+                    {
+                      hasClubs ?
+                          (<Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>) : (
+                              <div>
+                                <Header as="h3" textAlign="center">
+                                  No Interests Listed.
+                                </Header>
+                                <Header as="h3" textAlign="center">
+                                  Add interests to see clubs with similar interests.
+                                </Header>
+                              </div>)
+                    })
           }
         </Container>
     );

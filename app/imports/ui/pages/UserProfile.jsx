@@ -42,7 +42,7 @@ class UserProfile extends React.Component {
         <Card centered className="userprofile card">
           <Card.Content>
             <Card.Header className="userprofile card header">
-              {userProfile.firstName} {userProfile.lastName}&apos;s Profile
+              Your Profile
             </Card.Header>
             <Image floated="right" size="small" src={userProfile.picture}/>
           </Card.Content>
