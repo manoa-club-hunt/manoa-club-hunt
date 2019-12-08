@@ -53,12 +53,12 @@ class AddClub extends React.Component {
             <Header as="h2" textAlign="center">Add Club</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='clubName' placeholder="AECT-Hawaii"/>
-                <MultiSelectField name='interests'/>
-                <TextField name='contact' placeholder="Waynele Yu"/>
-                <TextField name='website' placeholder="
+                <TextField name='clubName' placeholder="e.g. AECT-Hawaii"/>
+                <MultiSelectField name='interests' placeholder="e.g. Academic"/>
+                <TextField name='contact' placeholder="e.g. Waynele Yu"/>
+                <TextField name='website' placeholder="e.g.
                   https://coe.hawaii.edu/students/association-educational-communications-technology-aect-hi"/>
-                <TextField name='email' placeholder="yourname@hawaii.edu"/>
+                <TextField name='email' placeholder="e.g. yourname@hawaii.edu"/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
