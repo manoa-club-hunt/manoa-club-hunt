@@ -5,11 +5,16 @@ import { Link, withRouter } from 'react-router-dom';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Club extends React.Component {
+
   render() {
-    let clubsite = this.props.club.website;
+    let disable = true;
+    const clubsite = this.props.club.website;
     if (clubsite === '') {
-      clubsite = '/#/notfoundclub';
+      disable = true;
+    } else {
+      disable = false;
     }
+
     return (
         <Card centered className="clubcard">
           <Card.Content textAlign="center" header={this.props.club.clubName}/>
@@ -17,7 +22,7 @@ class Club extends React.Component {
               <Button compact>
                 <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
               </Button>
-              <Button compact>
+              <Button compact disabled={disable}>
                 <a href={clubsite}>View Website</a>
               </Button>
           </Card.Content>

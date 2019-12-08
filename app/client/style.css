@@ -68,6 +68,10 @@ h3 {
   background: white;
 }
 
+ui.button:disabled {
+  opacity: 0.45 !important;
+}
+
 .ui.centered.clubcard.card .button {
   width: 60px;
   text-align: center;
