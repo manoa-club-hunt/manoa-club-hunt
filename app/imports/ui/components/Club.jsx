@@ -9,7 +9,6 @@ class Club extends React.Component {
   render() {
     let disable = true;
     const clubsite = this.props.club.website;
-    const clubimage = this.props.club.image;
     if (clubsite === '') {
       disable = true;
     } else {
@@ -18,8 +17,11 @@ class Club extends React.Component {
 
     return (
         <Card centered className="clubcard">
-          <Card.Content textAlign="center" header={this.props.club.clubName}/>
-          <Image src= {this.props.club.image}  fluid/>
+          <Card.Content textAlign="center">
+            <Image src={this.props.club.image} centered size="tiny" />
+            <hr/>
+            <Card.Header>{this.props.club.clubName}</Card.Header>
+          </Card.Content>
           <Card.Content extra className="cardButtonExtra">
               <Button compact>
                 <Link to={`/clubPage/${this.props.club._id}`}>View Profile</Link>
