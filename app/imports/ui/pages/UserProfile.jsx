@@ -14,22 +14,22 @@ class UserProfile extends React.Component {
   }
 
   renderPage() {
-    const email = Meteor.user().username;
-    const userProfile = UserProfiles.findOne({ email });
     let userInterests = '';
     let userClubs = '';
-    for (let i = 0; i < userProfile.interests.length; i++) {
-      if (i === userProfile.interests.length - 1) {
-        userInterests += userProfile.interests[i];
-      } else {
-        userInterests += `${userProfile.interests[i]}, `;
+    if (Meteor.users()) {
+      for (let i = 0; i < Meteor.users().profile.interests.length; i++) {
+        if (i === Meteor.users().profile.interests.length - 1) {
+          userInterests += Meteor.users().profile.interests[i];
+        } else {
+          userInterests += `${Meteor.users().profile.interests[i]}, `;
+        }
       }
-    }
-    for (let i = 0; i < userProfile.clubs.length; i++) {
-      if (i === userProfile.clubs.length - 1) {
-        userClubs += userProfile.clubs[i];
-      } else {
-        userClubs += `${userProfile.clubs[i]}, `;
+      for (let i = 0; i < Meteor.users().profile.clubs.length; i++) {
+        if (i === Meteor.users().profile.clubs.length - 1) {
+          userClubs += Meteor.users().profile.clubs[i];
+        } else {
+          userClubs += `${Meteor.users().profile.clubs[i]}, `;
+        }
       }
     }
     if (userClubs === '') {
@@ -44,7 +44,7 @@ class UserProfile extends React.Component {
             <Card.Header className="userprofile card header">
               Your Profile
             </Card.Header>
-            <Image floated="right" size="small" src={userProfile.picture}/>
+            <Image floated="right" size="small" src={Meteor.users().profile.picture}/>
           </Card.Content>
           <Card.Content>
             <Card.Description className="userprofile card content">
@@ -52,7 +52,7 @@ class UserProfile extends React.Component {
                 First Name:
               </div>
               <br/>
-              {userProfile.firstName}
+              {Meteor.users().profile.firstName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
@@ -60,7 +60,7 @@ class UserProfile extends React.Component {
                 Last Name:
               </div>
               <br/>
-              {userProfile.lastName}
+              {Meteor.users().profile.lastName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">

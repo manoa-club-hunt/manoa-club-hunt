@@ -16,17 +16,16 @@ class UserHome extends React.Component {
 
   renderPage() {
     const clubsList = this.props.clubs;
-    const email = Meteor.user().username;
-    const userProfile = UserProfiles.findOne({ email });
-    const userClubs = [];
-    userProfile.interests.forEach(function (interest) {
-      clubsList.forEach(function (club) {
-        if (_.contains(club.interests, interest)) {
-          userClubs.push(club);
-        }
+    if (Meteor.user()) {
+      Meteor.user().profile.interests.forEach(function (interest) {
+        clubsList.forEach(function (club) {
+          if (_.contains(club.interests, interest)) {
+            Meteor.user().profile.clubs.push(club);
+          }
+        });
       });
-    });
-    const sortedClubs = userClubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
+    }
+    const sortedClubs = Meteor.users().profile.clubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
     return (
         <Container>
           <Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>
