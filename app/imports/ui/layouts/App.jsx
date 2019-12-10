@@ -9,9 +9,7 @@ import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
 import UserHome from '../pages/UserHome';
 import ListClubs from '../pages/ListClubs';
-import EditStuff from '../pages/EditStuff';
 import clubPage from '../pages/clubPage';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
 import AddClub from '../pages/AddClub';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
@@ -44,8 +42,6 @@ class App extends React.Component {
               <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>
               <ProtectedRoute path="/edituserprofile" component={EditUserProfile}/>
-              <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>

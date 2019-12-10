@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, Grid, Header } from 'semantic-ui-react';
+import { Grid, Header } from 'semantic-ui-react';
 import { Fade } from 'react-slideshow-image';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Meteor } from 'meteor/meteor';
@@ -28,7 +28,6 @@ const fadeProperties = {
 class Landing extends React.Component {
   render() {
     const gridStyle = { height: '500px' };
-    const divStyle = { color: 'green' };
     return (
         <div>
           <div className="manoa-landing-background">
