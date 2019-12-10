@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Button } from 'semantic-ui-react';
+import { Container, Header, Loader, Button, Image } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import { _ } from 'meteor/underscore';
 import PropTypes from 'prop-types';
@@ -28,6 +28,7 @@ class clubPage extends React.Component {
 
     return (
         <Container>
+          <Image src={this.props.clubs.image} size="small"/>
           <Header as="h1" textAlign="left">{this.props.clubs.clubName}</Header>
           <Header as="h3" textAlign="left">
             Interest Area(s):
