@@ -21,7 +21,6 @@ const makeSchema = (allInterests, allClubs) => new SimpleSchema({
   email: { type: String, label: 'Email', optional: true },
   firstName: { type: String, label: 'First', optional: true },
   lastName: { type: String, label: 'Last', optional: true },
-  picture: { type: String, label: 'Picture URL', optional: true },
   interests: { type: Array, label: 'Interests', optional: true },
   'interests.$': { type: String, allowedValues: allInterests },
   clubs: { type: Array, label: 'Clubs', optional: true },
@@ -62,12 +61,11 @@ class UserProfile extends React.Component {
                   <TextField name='lastName' showInlineError={true} placeholder={'Last Name'}/>
                 </Form.Group>
                 <Form.Group widths={'equal'}>
-                  <TextField name='email' showInlineError={true} placeholder={'email'}/>
-                  <TextField name='picture' showInlineError={true} placeholder={'URL to picture'}/>
-                </Form.Group>
-                <Form.Group widths={'equal'}>
                   <MultiSelectField name='interests' showInlineError={true} placeholder={'Interests'}/>
                   <MultiSelectField name='clubs' showInlineError={true} placeholder={'Clubs'}/>
+                </Form.Group>
+                <Form.Group widths={'equal'}>
+                  <TextField name='email' showInlineError={true} placeholder={'email'}/>
                 </Form.Group>
                 <SubmitField value='Save'/>
                 <Link to="/userprofile"><Button>Cancel</Button></Link>

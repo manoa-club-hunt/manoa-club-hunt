@@ -16,7 +16,6 @@ class UserProfile extends React.Component {
   renderPage() {
     let userInterests = '';
     let userClubs = '';
-    if (Meteor.user()) {
       for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
         if (i === Meteor.user().profile.interests.length - 1) {
           userInterests += Meteor.user().profile.interests[i];
@@ -31,7 +30,6 @@ class UserProfile extends React.Component {
           userClubs += `${Meteor.user().profile.clubs[i]}, `;
         }
       }
-    }
     if (userClubs === '') {
       userClubs += 'No clubs listed.';
     }
