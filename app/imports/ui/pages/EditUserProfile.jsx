@@ -46,16 +46,15 @@ class UserProfile extends React.Component {
   }
 
   renderPage() {
-    const email = Meteor.user().username;
     const allInterests = _.pluck(Interests.find().fetch(), 'interest');
     const allClubs = _.pluck(Clubs.find().fetch(), 'clubName');
     const formSchema = makeSchema(allInterests, allClubs);
-    const userProfile = UserProfiles.findOne({ email });
+    const userProfile = Meteor.user().profile;
     const model = _.extend({}, userProfile);
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Profile</Header>
+            <Header as="h2" textAlign="center">Edit Profile</Header>
             <AutoForm model={model} schema={formSchema} onSubmit={data => this.submit(data)}>
               <Segment>
                 <Form.Group widths={'equal'}>

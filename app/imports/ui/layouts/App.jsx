@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import UserHome from '../pages/UserHome';
 import ListClubs from '../pages/ListClubs';
 import clubPage from '../pages/clubPage';
 import AddClub from '../pages/AddClub';
@@ -35,7 +34,6 @@ class App extends React.Component {
               <Route path="/notfoundclub" component={NotFoundClub}/>
               <Route path="/clubpage/:_id" component={clubPage}/>
               <ProtectedRoute path="/add" component={AddClub}/>
-              <ProtectedRoute path="/userhome" component={UserHome}/>
               <ProtectedRoute path="/clubpage/:_id" component={clubPage}/>
               <ProtectedRoute path="/edit/:_id" component={EditClubProfile}/>
               <ProtectedRoute path="/userprofile" component={UserProfile}/>

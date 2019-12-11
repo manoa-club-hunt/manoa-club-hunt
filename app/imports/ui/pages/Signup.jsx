@@ -25,7 +25,16 @@ class Signup extends React.Component {
     const { email, password, firstName, lastName } = this.state;
     const interests = [];
     const clubs = [];
-    Accounts.createUser({ email, username: email, password, firstName, lastName, interests, clubs }, (err) => {
+    Accounts.createUser({ username: email,
+        password: password,
+        email: email,
+        profile: {
+      email: email,
+          firstName: firstName,
+          lastName: lastName,
+          interests: interests,
+          clubs: clubs,
+    } }, (err) => {
       if (err) {
         this.setState({ error: err.reason });
       } else {

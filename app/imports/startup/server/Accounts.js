@@ -14,10 +14,8 @@ function createUser(email, password, firstName, lastName, interests, clubs, role
       email: email,
       firstName: firstName,
       lastName: lastName,
-      interests: Array,
-      'interests.$': String,
-      clubs: Array,
-      'clubs.$': String,
+      interests: interests,
+      clubs: clubs,
     },
   });
   if (role === 'admin') {
@@ -34,8 +32,8 @@ if (Meteor.users.find().count() === 0) {
     console.log('Creating the default user(s)');
     Meteor.settings.defaultAccounts.map(
         ({
-           email, password, firstName, lastName, interests, clubs, role,
-         }) => createUser(email, password, firstName, lastName, interests, clubs, role),
+           email, password, profile, role,
+         }) => createUser(email, password, profile.firstName, profile.lastName, profile.interests, profile.clubs, role),
     );
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');

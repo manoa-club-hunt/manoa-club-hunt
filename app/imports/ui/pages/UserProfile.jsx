@@ -5,7 +5,7 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
+import { userProfilesName } from '../../api/userprofiles/UserProfiles';
 
 class UserProfile extends React.Component {
 
@@ -16,19 +16,19 @@ class UserProfile extends React.Component {
   renderPage() {
     let userInterests = '';
     let userClubs = '';
-    if (Meteor.users()) {
-      for (let i = 0; i < Meteor.users().profile.interests.length; i++) {
-        if (i === Meteor.users().profile.interests.length - 1) {
-          userInterests += Meteor.users().profile.interests[i];
+    if (Meteor.user()) {
+      for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
+        if (i === Meteor.user().profile.interests.length - 1) {
+          userInterests += Meteor.user().profile.interests[i];
         } else {
-          userInterests += `${Meteor.users().profile.interests[i]}, `;
+          userInterests += `${Meteor.user().profile.interests[i]}, `;
         }
       }
-      for (let i = 0; i < Meteor.users().profile.clubs.length; i++) {
-        if (i === Meteor.users().profile.clubs.length - 1) {
-          userClubs += Meteor.users().profile.clubs[i];
+      for (let i = 0; i < Meteor.user().profile.clubs.length; i++) {
+        if (i === Meteor.user().profile.clubs.length - 1) {
+          userClubs += Meteor.user().profile.clubs[i];
         } else {
-          userClubs += `${Meteor.users().profile.clubs[i]}, `;
+          userClubs += `${Meteor.user().profile.clubs[i]}, `;
         }
       }
     }
@@ -44,7 +44,7 @@ class UserProfile extends React.Component {
             <Card.Header className="userprofile card header">
               Your Profile
             </Card.Header>
-            <Image floated="right" size="small" src={Meteor.users().profile.picture}/>
+            <Image floated="right" size="small" src={Meteor.user().profile.picture}/>
           </Card.Content>
           <Card.Content>
             <Card.Description className="userprofile card content">
@@ -52,7 +52,7 @@ class UserProfile extends React.Component {
                 First Name:
               </div>
               <br/>
-              {Meteor.users().profile.firstName}
+              {Meteor.user().profile.firstName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
@@ -60,7 +60,7 @@ class UserProfile extends React.Component {
                 Last Name:
               </div>
               <br/>
-              {Meteor.users().profile.lastName}
+              {Meteor.user().profile.lastName}
             </Card.Description>
             <br/>
             <Card.Description className="userprofile card content">
