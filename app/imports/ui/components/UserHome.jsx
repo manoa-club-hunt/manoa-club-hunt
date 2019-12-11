@@ -6,7 +6,6 @@ import { _ } from 'meteor/underscore';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import { Clubs, clubsName } from '../../api/club/Club';
-import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
 
 class UserHome extends React.Component {
 
@@ -17,9 +16,7 @@ class UserHome extends React.Component {
   renderPage() {
     const clubsList = this.props.clubs;
     const userClubs = [];
-    const email = Meteor.user().username;
-    const userProfile = UserProfiles.findOne({ email: email });
-    const userInterests = userProfile.interests;
+    const userInterests = Meteor.user().profile.interests;
     userInterests.forEach(function (interest) {
       clubsList.forEach(function (club) {
         if (_.contains(club.interests, interest)) {
@@ -33,7 +30,7 @@ class UserHome extends React.Component {
           <Header as="h2" textAlign="center">Clubs with Similar Interests to You</Header>
           <hr/>
           {
-            sortedClubs === [] ?
+            sortedClubs.length !== 0 ?
                 (<Card.Group centered itemsPerRow={8}>
                   {sortedClubs.map((club, index) => <Club key={index} club={club}/>)}
                 </Card.Group>) : (
@@ -58,9 +55,8 @@ UserHome.propTypes = {
 
 export default withTracker(() => {
   const sub1 = Meteor.subscribe(clubsName);
-  const sub2 = Meteor.subscribe(userProfilesName);
   return {
     clubs: Clubs.find({}).fetch(),
-    ready: sub1.ready() && sub2.ready(),
+    ready: sub1.ready(),
   };
 })(UserHome);
