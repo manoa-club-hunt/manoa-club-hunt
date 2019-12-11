@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link, Redirect } from 'react-router-dom';
 import { Container, Form, Grid, Header, Message, Segment } from 'semantic-ui-react';
 import { Accounts } from 'meteor/accounts-base';
-import { UserProfiles } from '../../api/userprofiles/UserProfiles';
 
 /**
  * Signup component is similar to signin component, but we create a new user instead.
@@ -38,13 +37,7 @@ class Signup extends React.Component {
       if (err) {
         this.setState({ error: err.reason });
       } else {
-        UserProfiles.insert({ email, firstName, lastName, interests, clubs }, (error2) => {
-          if (error2) {
-            this.setState({ error: error2.reason });
-          } else {
             this.setState({ error: '', redirectToReferer: true });
-          }
-        });
       }
     });
   };

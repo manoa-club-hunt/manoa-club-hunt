@@ -13,7 +13,6 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import MultiSelectField from '../forms/controllers/MultiSelectField';
 import { Interests, interestsName } from '../../api/interests/Interests';
-import { UserProfiles, userProfilesName } from '../../api/userprofiles/UserProfiles';
 import { Clubs, clubsName } from '../../api/club/Club';
 import { updateUserProfileMethod } from '../../startup/both/Methods';
 
@@ -82,10 +81,9 @@ UserProfile.propTypes = {
 };
 
 export default withTracker(() => {
-  const sub1 = Meteor.subscribe(userProfilesName);
-  const sub2 = Meteor.subscribe(clubsName);
-  const sub3 = Meteor.subscribe(interestsName);
+  const sub1 = Meteor.subscribe(clubsName);
+  const sub2 = Meteor.subscribe(interestsName);
   return {
-    ready: sub1.ready() && sub2.ready() && sub3.ready(),
+    ready: sub1.ready() && sub2.ready(),
   };
 })(UserProfile);

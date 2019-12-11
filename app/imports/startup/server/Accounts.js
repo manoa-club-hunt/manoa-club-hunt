@@ -33,7 +33,7 @@ if (Meteor.users.find().count() === 0) {
     Meteor.settings.defaultAccounts.map(
         ({
            email, password, profile, role,
-         }) => createUser(profile.email, password, profile.firstName, profile.lastName, profile.interests, profile.clubs, role),
+         }) => createUser(email, password, profile.firstName, profile.lastName, profile.interests, profile.clubs, role),
     );
   } else {
     console.log('Cannot initialize the database!  Please invoke meteor with a settings file.');

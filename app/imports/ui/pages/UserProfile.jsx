@@ -1,35 +1,28 @@
 import React from 'react';
-import { Card, Loader, Button, Image } from 'semantic-ui-react';
+import { Card, Button, Image } from 'semantic-ui-react';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { userProfilesName } from '../../api/userprofiles/UserProfiles';
 
 class UserProfile extends React.Component {
 
   render() {
-    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
-  }
-
-  renderPage() {
     let userInterests = '';
     let userClubs = '';
-      for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
-        if (i === Meteor.user().profile.interests.length - 1) {
-          userInterests += Meteor.user().profile.interests[i];
-        } else {
-          userInterests += `${Meteor.user().profile.interests[i]}, `;
-        }
+    for (let i = 0; i < Meteor.user().profile.interests.length; i++) {
+      if (i === Meteor.user().profile.interests.length - 1) {
+        userInterests += Meteor.user().profile.interests[i];
+      } else {
+        userInterests += `${Meteor.user().profile.interests[i]}, `;
       }
-      for (let i = 0; i < Meteor.user().profile.clubs.length; i++) {
-        if (i === Meteor.user().profile.clubs.length - 1) {
-          userClubs += Meteor.user().profile.clubs[i];
-        } else {
-          userClubs += `${Meteor.user().profile.clubs[i]}, `;
-        }
+    }
+    for (let i = 0; i < Meteor.user().profile.clubs.length; i++) {
+      if (i === Meteor.user().profile.clubs.length - 1) {
+        userClubs += Meteor.user().profile.clubs[i];
+      } else {
+        userClubs += `${Meteor.user().profile.clubs[i]}, `;
       }
+    }
     if (userClubs === '') {
       userClubs += 'No clubs listed.';
     }
@@ -87,13 +80,4 @@ class UserProfile extends React.Component {
   }
 }
 
-UserProfile.propTypes = {
-  ready: PropTypes.bool.isRequired,
-};
-
-export default withTracker(() => {
-  const sub1 = Meteor.subscribe(userProfilesName);
-  return {
-    ready: sub1.ready(),
-  };
-})(UserProfile);
+export default UserProfile;
