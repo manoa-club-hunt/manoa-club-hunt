@@ -56,6 +56,14 @@ class UserProfile extends React.Component {
             <br/>
             <Card.Description className="userprofile card content">
               <div className="userprofile card content header">
+                Email:
+              </div>
+              <br/>
+              {Meteor.user().username}
+            </Card.Description>
+            <br/>
+            <Card.Description className="userprofile card content">
+              <div className="userprofile card content header">
                 Interests:
               </div>
               <br/>

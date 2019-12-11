@@ -11,7 +11,6 @@ function createUser(email, password, firstName, lastName, interests, clubs, role
     password: password,
     email: email,
     profile: {
-      email: email,
       firstName: firstName,
       lastName: lastName,
       interests: interests,
