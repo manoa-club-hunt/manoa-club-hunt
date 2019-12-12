@@ -39,7 +39,14 @@ class clubPage extends React.Component {
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
           </div>
-          <button className="ui button"><Link to={`/edit/${this.props.clubs._id}`}>Edit Club</Link></button>
+          {
+            (Roles.userIsInRole(Meteor.userId(), 'officer') &&
+                _.contains(this.props.clubs.officers, Meteor.user().username)) ||
+            Roles.userIsInRole(Meteor.userId(), 'admin') ?
+                (<button className="ui button"><Link to={`/edit/${this.props.clubs._id}`}>
+                  Edit Club
+                </Link></button>) : ''
+          }
         </Container>
     );
   }
