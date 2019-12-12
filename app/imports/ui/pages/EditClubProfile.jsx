@@ -28,9 +28,9 @@ class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, interests, contact, website, email } = data;
+    const { name, interests, contact, website, email, _id } = data;
     const owner = Meteor.user().username;
-    Clubs.update({ name, interests, contact, website, email, owner },
+    Clubs.update(_id, { $set: { name, interests, contact, website, email, owner } },
         (error) => (error ?
             swal('Error', error.message, 'error') :
             swal('Success', 'Item updated successfully', 'success')));
@@ -70,6 +70,7 @@ class EditClubProfile extends React.Component {
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditClubProfile.propTypes = {
   doc: PropTypes.object,
+  model: PropTypes.object,
   ready: PropTypes.bool.isRequired,
 };
 
