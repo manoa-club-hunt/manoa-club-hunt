@@ -1,19 +1,18 @@
 import React from 'react';
 import { Grid, Segment, Header, Loader } from 'semantic-ui-react';
+import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import ListField from 'uniforms-semantic/ListField';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
-import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
-import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
 import { Clubs } from '../../api/club/Club';
+import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 
-/** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   name: String,
   interests: Array,
@@ -28,9 +27,9 @@ class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, interests, contact, website, email } = data;
+    const { name, interests, contact, website, email, _id } = data;
     const owner = Meteor.user().username;
-    Clubs.update({ name, interests, contact, website, email, owner },
+    Clubs.update(_id, { $set: { name, interests, contact, website, email, owner } },
         (error) => (error ?
             swal('Error', error.message, 'error') :
             swal('Success', 'Item updated successfully', 'success')));
@@ -70,6 +69,7 @@ class EditClubProfile extends React.Component {
 /** Require the presence of a Stuff document in the props object. Uniforms adds 'model' to the props, which we use. */
 EditClubProfile.propTypes = {
   doc: PropTypes.object,
+  model: PropTypes.object,
   ready: PropTypes.bool.isRequired,
 };
 
