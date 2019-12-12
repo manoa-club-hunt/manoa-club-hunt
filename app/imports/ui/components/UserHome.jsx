@@ -19,7 +19,7 @@ class UserHome extends React.Component {
     const userInterests = Meteor.user().profile.interests;
     userInterests.forEach(function (interest) {
       clubsList.forEach(function (club) {
-        if (_.contains(club.interests, interest)) {
+        if (_.contains(club.interests, interest) && !(_.contains(userClubs, club))) {
           userClubs.push(club);
         }
       });
