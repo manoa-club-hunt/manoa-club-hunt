@@ -6,7 +6,8 @@ import { _ } from 'meteor/underscore';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
-import { Clubs } from '../../api/club/Club';
+import { Clubs, clubsName } from '../../api/club/Club';
+import { Interests } from '../../api/interests/Interests';
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class clubPage extends React.Component {
@@ -36,12 +37,11 @@ class clubPage extends React.Component {
               return buttonInterest(val);
             })}
           </Header>
-          <Header as="h3" textAlign="left">Club Info</Header>
+          <div className="item">{this.props.clubs.description}</div>
           <div className="ui bulleted list">
             <div className="item">Website: <a href={this.props.clubs.website}>Click here for site</a></div>
             <div className="item">Contact: {this.props.clubs.contact}</div>
             <div className="item">Email: {this.props.clubs.email}</div>
-            <div className="item">Description: {this.props.clubs.description}</div>
           </div>
           {
             (Roles.userIsInRole(Meteor.userId(), 'officer') &&
@@ -66,7 +66,7 @@ clubPage.propTypes = {
 export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to club documents.
-  const subscription = Meteor.subscribe('Clubs');
+  const subscription = Meteor.subscribe(clubsName);
   return {
     clubs: Clubs.findOne(documentId),
     ready: subscription.ready(),
