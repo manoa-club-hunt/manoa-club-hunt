@@ -18,7 +18,7 @@ const ClubSchema = new SimpleSchema({
   email: { type: String, defaultValue: '' },
   image: { type: String, defaultValue:
         'https://clt.manoa.hawaii.edu/wp-content/uploads/2016/08/Manoa-seal-297x300.png' },
-  description: { type: String, defaultValue: 'None Available'},
+  description: { type: String, defaultValue: 'None Available' },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

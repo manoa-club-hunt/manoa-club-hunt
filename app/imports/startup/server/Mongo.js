@@ -22,4 +22,3 @@ if (Clubs.find().count() === 0) {
     defaultClubs.map(data => addClubs(data));
   }
 }
-
