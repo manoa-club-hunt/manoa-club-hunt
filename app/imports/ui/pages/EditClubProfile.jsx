@@ -4,6 +4,7 @@ import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
 import ListField from 'uniforms-semantic/ListField';
 import SubmitField from 'uniforms-semantic/SubmitField';
+import LongTextField from 'uniforms-semantic/LongTextField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
 import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
@@ -28,9 +29,9 @@ class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, interests, contact, website, email } = data;
+    const { name, interests, contact, website, email, image, description } = data;
     const owner = Meteor.user().username;
-    Clubs.update({ name, interests, contact, website, email, owner },
+    Clubs.update({ name, interests, contact, website, email, image, description, owner },
         (error) => (error ?
             swal('Error', error.message, 'error') :
             swal('Success', 'Item updated successfully', 'success')));
@@ -57,6 +58,8 @@ class EditClubProfile extends React.Component {
                 <TextField name='contact'/>
                 <TextField name='website'/>
                 <TextField name='email'/>
+                <TextField name='image'/>
+                <LongTextField name='description'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>
