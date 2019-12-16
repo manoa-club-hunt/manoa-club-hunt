@@ -17,6 +17,8 @@ import { Clubs } from '../../api/club/Club';
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
   name: String,
+  image: String,
+  description: String,
   interests: Array,
   'interests.$': String,
   contact: String,
