@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Roles } from 'meteor/alanning:roles';
 import { Clubs, clubsName } from '../../api/club/Club';
-import { Interests } from '../../api/interests/Interests';
+
 
 /** Renders a table containing all of the Stuff documents. Use <StuffItem> to render each row. */
 class clubPage extends React.Component {
@@ -21,7 +21,7 @@ class clubPage extends React.Component {
   renderPage() {
     // console.log(this.props.clubs.interests);
     function buttonInterest(data) {
-      return (<Button><Link to={'/list'}>
+      return (<Button><Link to={`/list/${data}`}>
         {data}
       </Link>
       </Button>);
@@ -37,6 +37,7 @@ class clubPage extends React.Component {
               return buttonInterest(val);
             })}
           </Header>
+          <Header as="h3" textAlign="left">Club Info</Header>
           <div className="item">{this.props.clubs.description}</div>
           <div className="ui bulleted list">
             <div className="item">Website: <a href={this.props.clubs.website}>Click here for site</a></div>
