@@ -4,14 +4,56 @@ import { Container, Card, Header, Loader, Dropdown } from 'semantic-ui-react';
 import Club from '/imports/ui/components/Club';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Session } from 'meteor/session';
 import { Clubs } from '../../api/club/Club';
 import { Interests } from '../../api/interests/Interests';
 
+const _ = require('underscore');
+
 class ListClubs extends React.Component {
+  constructor(props) {
+    super(props);
+    const clubs = this.props.clubs;
+    this.state = {
+      value: '',
+      list: clubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1)),
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.updateList = this.updateList.bind(this);
 
-  state = { value: '' }
+    // eslint-disable-next-line no-undef
+    let location = window.location.href;
+    if (location.length > 28) {
+      location = location.slice(29, location.length);
+      this.setState({ value: location });
+      // eslint-disable-next-line meteor/no-session
+      Session.set('value', location);
+      // eslint-disable-next-line meteor/no-session
+      this.updateList(Session.get('value'));
+    }
+  }
 
-  handleChange = (e, { value }) => this.setState({ value })
+  handleChange(e, { name, value }) {
+    this.setState({ [name]: value });
+    if (name === 'value') {
+      // eslint-disable-next-line meteor/no-session
+      Session.set('value', value);
+      // eslint-disable-next-line meteor/no-session
+      this.updateList(Session.get('value'));
+    }
+  }
+
+  updateList(interest) {
+    const search = _.filter(this.props.clubs, function (club) {
+      const arr = club.interests;
+      return _.contains(arr, interest);
+    });
+    this.setState({
+      list: search,
+    });
+    // eslint-disable-next-line meteor/no-session
+    Session.set('list', search);
+  }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
   render() {
@@ -20,19 +62,16 @@ class ListClubs extends React.Component {
 
   /** Render the page once subscriptions have been received. */
   renderPage() {
-    const { value } = this.state;
-
+    const clubs = this.props.clubs;
+    // eslint-disable-next-line meteor/no-session
+    Session.setDefault('list', clubs.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1)));
     const interestOptions = this.props.interests.map(int => ({
       key: int.interest,
       text: int.interest,
       value: int.interest,
     }));
-    let ClubList = this.props.clubs;
-    ClubList = ClubList.sort((a, b) => ((a.clubName > b.clubName) ? 1 : -1));
-    if (this.state.value !== '') {
-      ClubList = ClubList.filter(a => a.interests.indexOf(this.state.value) > -1);
-    }
-
+    // eslint-disable-next-line meteor/no-session
+    const list = Session.get('list');
     return (
         <Container>
           <Header as="h2" textAlign="center">Club Listings</Header>
@@ -41,7 +80,8 @@ class ListClubs extends React.Component {
               clearable
               placeholder='Select Interest'
               fluid
-              value={value}
+              name={'value'}
+              value={this.state.value}
               onChange={this.handleChange}
               search
               selection
@@ -49,7 +89,7 @@ class ListClubs extends React.Component {
           />
           <br/>
           <Card.Group centered itemsPerRow={8}>
-            {ClubList.map((club, index) => <Club key={index} club={club}/>)}
+            {list.map((club, index) => <Club key={index} club={club}/>)}
           </Card.Group>
         </Container>
     );
