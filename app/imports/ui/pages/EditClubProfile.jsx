@@ -3,7 +3,7 @@ import { Grid, Segment, Header, Loader } from 'semantic-ui-react';
 import swal from 'sweetalert';
 import AutoForm from 'uniforms-semantic/AutoForm';
 import TextField from 'uniforms-semantic/TextField';
-import ListField from 'uniforms-semantic/ListField';
+import { _ } from 'meteor/underscore';
 import SubmitField from 'uniforms-semantic/SubmitField';
 import LongTextField from 'uniforms-semantic/LongTextField';
 import ErrorsField from 'uniforms-semantic/ErrorsField';
@@ -11,17 +11,21 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
 import SimpleSchema from 'simpl-schema';
+import MultiSelectField from '../forms/controllers/MultiSelectField';
+import { Interests } from '../../api/interests/Interests';
 import { Clubs } from '../../api/club/Club';
 import 'uniforms-bridge-simple-schema-2'; // required for Uniforms
 
-const formSchema = new SimpleSchema({
+
+/** Create a schema to specify the structure of the data to appear in the form. */
+const formSchema = (allInterests) => new SimpleSchema({
   clubName: String,
   image: String,
-  description: String,
+  description: { type: String, defaultValue: 'No description available.', optional: true },
   interests: Array,
-  'interests.$': String,
+  'interests.$': { type: String, allowedValues: allInterests },
   contact: String,
-  website: { type: String, defaultValue: '' },
+  website: { type: String, defaultValue: '', optional: true },
   email: { type: String, defaultValue: '' },
 });
 
@@ -30,12 +34,29 @@ class EditClubProfile extends React.Component {
 
   /** On submit, insert the data. */
   submit(data) {
-    const { name, interests, contact, website, email, _id } = data;
+    const { clubName, interests, contact, website, email, image, description, _id } = data;
     const owner = Meteor.user().username;
-    Clubs.update(_id, { $set: { name, interests, contact, website, email, owner } },
-        (error) => (error ?
-            swal('Error', error.message, 'error') :
-            swal('Success', 'Item updated successfully', 'success')));
+    if (website === '' && description === '') {
+      Clubs.update(_id, { $set: { clubName, interests, contact, email, image, owner } },
+          (error) => (error ?
+              swal('Error', error.message, 'error') :
+              swal('Success', 'Item updated successfully', 'success')));
+    } else if (website === '') {
+      Clubs.update(_id, { $set: { clubName, interests, contact, email, image, description, owner } },
+          (error) => (error ?
+              swal('Error', error.message, 'error') :
+              swal('Success', 'Item updated successfully', 'success')));
+    } else if (description === '') {
+      Clubs.update(_id, { $set: { clubName, interests, contact, website, email, image, owner } },
+          (error) => (error ?
+              swal('Error', error.message, 'error') :
+              swal('Success', 'Item updated successfully', 'success')));
+    } else {
+      Clubs.update(_id, { $set: { clubName, interests, contact, website, email, image, description, owner } },
+          (error) => (error ?
+              swal('Error', error.message, 'error') :
+              swal('Success', 'Item updated successfully', 'success')));
+    }
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */
@@ -46,16 +67,16 @@ class EditClubProfile extends React.Component {
 
   /** Render the form. Use Uniforms: https://github.com/vazco/uniforms */
   renderPage() {
+    const allInterests = _.pluck(Interests.find().fetch(), 'interest');
+    const makeSchema = formSchema(allInterests);
     return (
         <Grid container centered>
           <Grid.Column>
             <Header as="h2" textAlign="center">Edit Club</Header>
-            <AutoForm schema={formSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
+            <AutoForm schema={makeSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
                 <TextField name='clubName'/>
-                <ListField name='interests'>
-                  <TextField name='$' />
-                </ListField>
+                <MultiSelectField name='interests'/>
                 <TextField name='contact'/>
                 <TextField name='website'/>
                 <TextField name='email'/>
@@ -75,6 +96,7 @@ class EditClubProfile extends React.Component {
 EditClubProfile.propTypes = {
   doc: PropTypes.object,
   model: PropTypes.object,
+  interests: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -84,8 +106,10 @@ export default withTracker(({ match }) => {
   const documentId = match.params._id;
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Clubs');
+  const subscription1 = Meteor.subscribe('Interests');
   return {
     doc: Clubs.findOne(documentId),
-    ready: subscription.ready(),
+    interests: Interests.find({}).fetch(),
+    ready: subscription.ready() && subscription1.ready(),
   };
 })(EditClubProfile);
