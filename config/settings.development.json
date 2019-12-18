@@ -15,8 +15,7 @@
         "clubs": [
           "Academy for Creative Media Student Association",
           "Adventist Christian Fellowship"
-        ],
-        "picture": "/images/default-user-icon.jpg"
+        ]
       }
     },
     {
@@ -32,8 +31,7 @@
         ],
         "clubs": [
           "Academy for Creative Media Student Association"
-        ],
-        "picture": ""
+        ]
       }
     },
     {
@@ -50,51 +48,8 @@
         ],
         "clubs": [
           "Academy for Creative Media Student Association"
-        ],
-        "picture": ""
+        ]
       }
-    }
-  ],
-  "defaultUserProfiles": [
-    {
-      "email": "admin@foo.com",
-      "firstName": "admin",
-      "lastName": "foo",
-      "interests": [
-        "Academic",
-        "Religious"
-      ],
-      "clubs": [
-        "Academy for Creative Media Student Association",
-        "Adventist Christian Fellowship"
-      ],
-      "picture": "/images/default-user-icon.jpg"
-    },
-    {
-      "email": "john@foo.com",
-      "firstName": "john",
-      "lastName": "foo",
-      "interests": [
-        "Academic",
-        "Professional"
-      ],
-      "clubs": [
-        "Academy for Creative Media Student Association"
-      ],
-      "picture": ""
-    },
-    {
-      "email": "officer@foo.com",
-      "firstName": "officer",
-      "lastName": "foo",
-      "interests": [
-        "Academic",
-        "Professional"
-      ],
-      "clubs": [
-        "Academy for Creative Media Student Association"
-      ],
-      "picture": ""
     }
   ]
 }
